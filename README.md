@@ -5,6 +5,7 @@ CSV exports of **every chart** on [visaonchainanalytics.com](https://visaonchain
 plus a one-command pipeline to regenerate them.
 
 **🔎 Live, browsable viewer: https://0xsector.github.io/visaonchainanalytics-csv-export/**
+**✓ Data verification (each chart vs live VOA): [VERIFICATION.html](https://0xsector.github.io/visaonchainanalytics-csv-export/VERIFICATION.html)**
 (search any chart, preview its table, download the CSV — or grab everything as a zip)
 
 > Data is sourced from the public charts on visaonchainanalytics.com (powered by
@@ -28,7 +29,7 @@ One CSV per chart, named `<tab>__<chart-title>.csv`, in wide format
 - **`index.html`** — browsable catalog of all charts → CSV links.
 - **`charts_manifest.json`** — per-chart metadata (metric, group-by, series, row counts, source query id).
 
-Snapshot generated **2026-06-04**. Re-run the pipeline to refresh.
+Snapshot generated **2026-06-08**. Re-run the pipeline to refresh.
 
 ## How it works
 

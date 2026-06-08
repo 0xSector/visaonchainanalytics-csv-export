@@ -7,7 +7,7 @@ import csv, json, os, zipfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ART = os.path.join(HERE, "artifacts")
-SNAPSHOT = "2026-06-04"
+SNAPSHOT = "2026-06-08"
 SITE = "https://visaonchainanalytics.com"
 
 def load():
@@ -148,7 +148,7 @@ def build_html(charts):
 <meta name=viewport content="width=device-width,initial-scale=1">
 <title>Visa Onchain Analytics — chart data</title><link rel="icon" href="data:,"><style>{CSS}</style></head><body>
 <header><div><h1>Visa Onchain Analytics — every chart as data</h1>
-<div class=sub>{len(charts)} charts across {ntabs} tabs · snapshot {SNAPSHOT} · source: <a href="{SITE}">visaonchainanalytics.com</a> (Allium)</div></div>
+<div class=sub>{len(charts)} charts across {ntabs} tabs · snapshot {SNAPSHOT} · source: <a href="{SITE}">visaonchainanalytics.com</a> (Allium) · <a href="VERIFICATION.html">data verification ✓</a></div></div>
 <a class=all href="voa-charts-bundle.zip" download>⤓ Download all (zip)</a></header>
 <div class=wrap><aside><input id=q placeholder="Search charts, metrics, series…" autofocus><div id=list></div></aside>
 <main id=main></main></div>

@@ -371,7 +371,8 @@
       "paribus",
       "zeno_lend",
       "filda",
-      "power_pool"
+      "power_pool",
+      "curvance"
     ]
   },
   {
@@ -807,8 +808,8 @@
     "series": [
       "tron",
       "bsc",
-      "ethereum",
       "solana",
+      "ethereum",
       "polygon",
       "arbitrum",
       "base",
