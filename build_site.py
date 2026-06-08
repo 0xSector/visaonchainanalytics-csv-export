@@ -100,7 +100,7 @@ def build_html(charts):
     ntabs = len(set(c["page"] for c in charts))
     return f"""<!doctype html><html lang=en><head><meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<title>Visa Onchain Analytics — chart data</title><style>{CSS}</style></head><body>
+<title>Visa Onchain Analytics — chart data</title><link rel="icon" href="data:,"><style>{CSS}</style></head><body>
 <header><div><h1>Visa Onchain Analytics — every chart as data</h1>
 <div class=sub>{len(charts)} charts across {ntabs} tabs · snapshot {SNAPSHOT} · source: <a href="{SITE}">visaonchainanalytics.com</a> (Allium)</div></div>
 <a class=all href="voa-charts-bundle.zip" download>⤓ Download all (zip)</a></header>
