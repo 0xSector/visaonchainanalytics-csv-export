@@ -4,6 +4,9 @@ CSV exports of **every chart** on [visaonchainanalytics.com](https://visaonchain
 29 charts across all 6 tabs (home, addresses, insights, lending, supply, transactions) —
 plus a one-command pipeline to regenerate them.
 
+**🔎 Live, browsable viewer: https://0xsector.github.io/visaonchainanalytics-csv-export/**
+(search any chart, preview its table, download the CSV — or grab everything as a zip)
+
 > Data is sourced from the public charts on visaonchainanalytics.com (powered by
 > [Allium](https://allium.so)). This is an independent export utility; the underlying
 > data belongs to its respective owners.
