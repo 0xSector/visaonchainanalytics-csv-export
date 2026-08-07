@@ -7,7 +7,7 @@ import csv, json, os, zipfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ART = os.path.join(HERE, "artifacts")
-SNAPSHOT = "2026-06-08"
+SNAPSHOT = "2026-08-07"
 SITE = "https://visaonchainanalytics.com"
 
 def load():

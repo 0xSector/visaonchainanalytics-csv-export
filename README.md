@@ -29,7 +29,7 @@ One CSV per chart, named `<tab>__<chart-title>.csv`, in wide format
 - **`index.html`** — browsable catalog of all charts → CSV links.
 - **`charts_manifest.json`** — per-chart metadata (metric, group-by, series, row counts, source query id).
 
-Snapshot generated **2026-06-08**. Re-run the pipeline to refresh.
+Snapshot generated **2026-08-07**. Re-run the pipeline to refresh.
 
 ## How it works
 
