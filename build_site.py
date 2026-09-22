@@ -7,7 +7,7 @@ import csv, json, os, zipfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ART = os.path.join(HERE, "artifacts")
-SNAPSHOT = "2026-08-07"
+SNAPSHOT = "2026-09-22"
 SITE = "https://visaonchainanalytics.com"
 
 def load():
@@ -21,10 +21,13 @@ def load():
             "title": m.get("title", fn), "description": m.get("description", ""),
             "metric": m.get("metric"), "groupBy": m.get("groupBy"), "aggregate": m.get("aggregate"),
             "series": m.get("series", []), "source": f'{m.get("shareId","")}.{m.get("queryId","")}',
+            "new": fn.endswith("_by_category.csv"),
             "columns": rows[0], "data": rows[1:],
         })
     order = {p: i for i, p in enumerate(["home", "addresses", "supply", "transactions", "lending", "insights"])}
-    charts.sort(key=lambda c: (order.get(c["page"], 9), c["title"]))
+    # new (category-toggle) charts float to the top of their tab section
+    charts.sort(key=lambda c: (order.get(c["page"], 9), 0 if c["new"] else 1,
+                               0 if "volume" in c["file"] else 1, c["title"]))
     return charts
 
 CSS = """
@@ -60,6 +63,11 @@ th:first-child,td:first-child{text-align:left;position:sticky;left:0;background:
 thead th{position:sticky;top:0;background:#f4f2ff;z-index:1}
 tbody tr:hover td{background:#fcfbff}
 .empty{color:var(--muted);padding:40px;text-align:center}
+.item.isnew{background:#fff5fb} .item.isnew.on{background:#ffe3f1;color:#b0106b}
+.newpill{display:inline-block;margin-left:6px;font-size:9px;font-weight:700;letter-spacing:.04em;color:#fff;background:#e6007a;border-radius:5px;padding:1px 5px;vertical-align:middle}
+.hactions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.callout{display:inline-flex;align-items:center;gap:7px;background:#fff0f7;border:1px solid #f3bcdd;color:#b0106b;border-radius:8px;padding:8px 13px;font-size:13px;cursor:pointer;text-decoration:none;white-space:nowrap}
+.callout:hover{background:#ffe3f1} .callout b{font-weight:700}
 """
 
 JS = r"""
@@ -113,8 +121,8 @@ function render(){
   Object.keys(groups).forEach(pg=>{
     const h=document.createElement('div');h.className='tab';h.textContent=pg;aside.appendChild(h);
     groups[pg].forEach(i=>{const c=CHARTS[i];const d=document.createElement('div');
-      d.className='item'+(i===cur?' on':'');d.onclick=()=>show(i);
-      d.innerHTML=`${c.title}<div class="meta">${c.data.length} rows · ${(c.series||[]).length} series</div>`;
+      d.className='item'+(c.new?' isnew':'')+(i===cur?' on':'');d.onclick=()=>show(i);
+      d.innerHTML=`${c.title}${c.new?' <span class="newpill">NEW</span>':''}<div class="meta">${c.data.length} rows · ${(c.series||[]).length} series</div>`;
       aside.appendChild(d);});
   });
   if(!Object.keys(groups).length) aside.innerHTML='<div class="empty">No charts match.</div>';
@@ -138,6 +146,9 @@ function dl(i){const c=CHARTS[i];
   const csv=[c.columns.join(',')].concat(c.data.map(r=>r.map(x=>/[,"\n]/.test(x)?'"'+x.replace(/"/g,'""')+'"':x).join(','))).join('\n');
   const b=new Blob([csv],{type:'text/csv'});const a=document.createElement('a');
   a.href=URL.createObjectURL(b);a.download=c.file;a.click();}
+function jumpNew(){let i=CHARTS.findIndex(c=>c.new&&/volume/i.test(c.file));
+  if(i<0)i=CHARTS.findIndex(c=>c.new); if(i>=0){q.value='';show(i);main.scrollTop=0;}}
+window.jumpNew=jumpNew;
 q.oninput=render; render(); if(CHARTS.length) show(0);
 """
 
@@ -149,7 +160,8 @@ def build_html(charts):
 <title>Visa Onchain Analytics — chart data</title><link rel="icon" href="data:,"><style>{CSS}</style></head><body>
 <header><div><h1>Visa Onchain Analytics — every chart as data</h1>
 <div class=sub>{len(charts)} charts across {ntabs} tabs · snapshot {SNAPSHOT} · source: <a href="{SITE}">visaonchainanalytics.com</a> (Allium) · <a href="VERIFICATION.html">data verification ✓</a></div></div>
-<a class=all href="voa-charts-bundle.zip" download>⤓ Download all (zip)</a></header>
+<div class=hactions><a class=callout onclick="jumpNew()" title="Jump to the new category breakdown">🆕 New: <b>adjusted volume &amp; count, by category</b></a>
+<a class=all href="voa-charts-bundle.zip" download>⤓ Download all (zip)</a></div></header>
 <div class=wrap><aside><input id=q placeholder="Search charts, metrics, series…" autofocus><div id=list></div></aside>
 <main id=main></main></div>
 <script type="application/json" id="data">{payload}</script>

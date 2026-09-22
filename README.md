@@ -1,7 +1,7 @@
 # visaonchainanalytics-csv-export
 
 CSV exports of **every chart** on [visaonchainanalytics.com](https://visaonchainanalytics.com) —
-29 charts across all 6 tabs (home, addresses, insights, lending, supply, transactions) —
+31 charts across all 6 tabs (home, addresses, insights, lending, supply, transactions) —
 plus a one-command pipeline to regenerate them.
 
 **🔎 Live, browsable viewer: https://0xsector.github.io/visaonchainanalytics-csv-export/**
@@ -23,13 +23,15 @@ One CSV per chart, named `<tab>__<chart-title>.csv`, in wide format
 | `supply__average_stablecoin_supply_by_blockchain.csv` | …by blockchain (Ethereum, Tron, Solana, …) |
 | `addresses__*` | Monthly active unique wallet addresses, by stablecoin / blockchain |
 | `transactions__*` | Stablecoin transfer volume & count, by stablecoin / chain / day-type / adjusted-vs-unadjusted / retail-vs-other |
+| `transactions__stablecoin_transaction_volume_adjusted_by_category.csv` | **New** — Adjusted volume split by transfer category (infra, store-of-value, payments, DeFi, …), the site's *Show Categories* toggle |
+| `transactions__stablecoin_transaction_count_adjusted_by_category.csv` | **New** — same split for transaction count |
 | `lending__*` | Onchain loan volume & outstanding loans, by chain / stablecoin / protocol / asset |
 | `insights__*` | Curated insight snapshots (USDC on Base, PYUSD, transaction-size mix, …) |
 
 - **`index.html`** — browsable catalog of all charts → CSV links.
 - **`charts_manifest.json`** — per-chart metadata (metric, group-by, series, row counts, source query id).
 
-Snapshot generated **2026-08-07**. Re-run the pipeline to refresh.
+Snapshot generated **2026-09-22**. Re-run the pipeline to refresh.
 
 ## How it works
 

@@ -75,6 +75,7 @@ def parse_charts(rsc):
             "x_field": x.get("field"), "metric": (ys[0].get("field") if ys else None),
             "aggregate": (ys[0].get("aggregate") if ys else None),
             "groupBy": resolve_group(gb.get("field"), binds),
+            "category_capable": bool(gb.get("field") and "get_adjusted_group_field" in gb.get("field")),
             "appearance": cfg.get("appearance") or {},
         })
     return charts
@@ -128,6 +129,43 @@ def rebuild_tag_chart(chart, seed):
     return {"file": fname, "rows": len(grid), "x": chart["x_field"], "group": "tag",
             "metric": metric, "series": order,
             "note": f"both series from base relation (seed default view = '{vis_tag}'); cross-check {'OK' if ok else 'MISMATCH:'+str(bad[:3])}"}
+
+CATEGORY_TAG = "Adjusted"  # the "Show Categories" toggle splits the Adjusted series
+
+def rebuild_category_chart(chart):
+    """The 'Show Categories' toggle on the adjusted volume/count charts splits the
+    Adjusted series by transfer classification. That series is fetched on toggle, not
+    seeded, so SQL-replay the base relation grouped by category (tag='Adjusted').
+    Guardrail: monthly sum over categories must equal the ungrouped Adjusted total
+    (catches any NULL-category rows) or the note is flagged MISMATCH."""
+    s, q = chart["shareId"], chart["queryId"]; metric = chart["metric"]
+    rel = f'share."{s}"."{q}"'
+    rows = server_query(
+        f'SELECT strftime(date_trunc(\'month\',"day"::TIMESTAMP),\'%Y-%m-01\') m, '
+        f'"category" g, SUM("{metric}") v FROM {rel} '
+        f'WHERE "tag"=\'{CATEGORY_TAG}\' GROUP BY 1,2')
+    ung = {r["m"]: r["v"] for r in server_query(
+        f'SELECT strftime(date_trunc(\'month\',"day"::TIMESTAMP),\'%Y-%m-01\') m, '
+        f'SUM("{metric}") v FROM {rel} WHERE "tag"=\'{CATEGORY_TAG}\' GROUP BY 1')}
+    grid = {}; totals = {}
+    for r in rows:
+        grid.setdefault(r["m"], {})[r["g"]] = r["v"]
+        totals[r["g"]] = totals.get(r["g"], 0) + (r["v"] or 0)
+    order = [g for g in sorted(totals, key=lambda t: -totals[t]) if g is not None]
+    bad = [m for m, v in ung.items()
+           if v and abs(v - sum(x or 0 for x in grid.get(m, {}).values())) / v > 1e-6]
+    ok = not bad
+    base = slug(chart["title"]).replace("_adjusted_vs_unadjusted", "_adjusted")
+    fname = f"{chart['page']}__{base}_by_category.csv"
+    with open(os.path.join(OUT, fname), "w", newline="") as f:
+        w = csv.writer(f); w.writerow([chart["x_field"]] + order + ["total"])
+        for m in sorted(grid):
+            vals = [grid[m].get(g, 0) or 0 for g in order]
+            w.writerow([m] + [f"{v:.6f}" for v in vals] + [f"{sum(vals):.6f}"])
+    return {"file": fname, "rows": len(grid), "x": chart["x_field"], "group": "category",
+            "metric": metric, "series": order,
+            "note": f"Adjusted series split by classification (SQL-replay of {CATEGORY_TAG} tag, "
+                    f"not seeded); monthly cross-check vs Adjusted total {'OK' if ok else 'MISMATCH:'+str(bad[:3])}"}
 
 def slug(s):
     return re.sub(r"[^a-z0-9]+", "_", s.lower()).strip("_")[:70]
@@ -231,6 +269,18 @@ def main():
                 info = write_chart_csv(ch, seeds[idx], page_name)
             catalog.append({**{k: ch[k] for k in ("title", "queryId", "shareId", "metric", "groupBy", "x_field", "aggregate", "description")},
                             "page": page_name, **info})
+            # 'Show Categories' toggle: emit the Adjusted series split by classification (SQL-replay,
+            # not seeded). Only when category is NOT already the seeded default (i.e. the transactions
+            # adjusted-vs-unadjusted charts, where the default view is by tag; the insights adjusted
+            # charts are category-grouped by default and are already written from their seed).
+            if ch.get("category_capable") and ch["groupBy"] != "category":
+                ci = rebuild_category_chart(ch)
+                catalog.append({
+                    "title": (ch["title"] or "") + " \u2014 by Category",
+                    "queryId": ch["queryId"], "shareId": ch["shareId"],
+                    "groupBy": "category", "aggregate": ch["aggregate"], "x_field": ch["x_field"],
+                    "description": (ch.get("description") or "") + " Category split of the Adjusted series (Show Categories toggle).",
+                    "page": page_name, **ci})
         print(f"{route:14s} charts={len(charts)} seeds={len(seeds)} matched={sum(used)}")
     json.dump(catalog, open(os.path.join(OUT, "charts_manifest.json"), "w"), indent=2)
     write_index(catalog)

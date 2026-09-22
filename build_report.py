@@ -7,7 +7,7 @@
 # Residuals re-measured 2026-08-07 against the live site.
 import html, os
 HERE=os.path.dirname(os.path.abspath(__file__))
-SNAPSHOT="2026-08-07"
+SNAPSHOT="2026-09-22"
 
 # (tab, chart, compared, resid_pct, read, note)
 R=[
@@ -44,6 +44,16 @@ INFER=[
   ('insights', 'Transaction Size, by Blockchain (August 2024)', 'VOA renders this 100%-stacked (share per chain); CSV holds raw counts.', 'Same oNJ0 base query as the transactions Transaction-Size chart, which is verified below at 0.5%.'),
 ]
 
+# (tab, chart, basis, resid, note) — verified by internal reconciliation, not a geometric render read
+CAT=[
+  ('transactions', 'Stablecoin Transaction Volume, Adjusted vs. Unadjusted \u2014 by Category',
+   '\u03a3 categories = Adjusted total', '<1e-6',
+   'Category split of the Adjusted series (the Show Categories toggle); SQL-replayed from the base relation, not seeded. Every month reconciles to the geometrically-verified Adjusted volume total (0.32%) to floating-point epsilon.'),
+  ('transactions', 'Stablecoin Transaction Count, Adjusted vs. Unadjusted \u2014 by Category',
+   '\u03a3 categories = Adjusted total', '<1e-6',
+   'As above for transaction count; reconciles to the geometrically-verified Adjusted count total (0.33%).'),
+]
+
 def main():
     rows="".join(
         f"<tr><td>{html.escape(t)}</td><td>{html.escape(c)}</td><td>{html.escape(tgt)}</td>"
@@ -52,6 +62,9 @@ def main():
     inf="".join(
         f"<tr><td>{html.escape(t)}</td><td>{html.escape(c)}</td><td colspan=2 class=cond>{html.escape(cond)}</td>"
         f"<td colspan=2 class=note>{html.escape(note)}</td></tr>" for (t,c,cond,note) in INFER)
+    cat="".join(
+        f"<tr><td>{html.escape(t)}</td><td>{html.escape(c)}</td><td class=cond>{html.escape(basis)}</td>"
+        f"<td class=n>{html.escape(resid)}</td><td colspan=2 class=note>{html.escape(note)}</td></tr>" for (t,c,basis,resid,note) in CAT)
     doc=f"""<!doctype html><meta charset=utf-8><title>VOA export — data verification</title>
 <style>body{{font:14px/1.55 -apple-system,Segoe UI,Roboto,sans-serif;margin:34px;color:#1a1a2e;max-width:1100px}}
 h1{{font-size:23px;margin-bottom:2px}} h2{{font-size:16px;margin-top:28px}} .sub{{color:#666;margin-bottom:18px}}
@@ -78,6 +91,10 @@ reading rendered geometry (~1px ≈ 0.3–0.5%); the underlying CSV values are e
 <h2>2 charts — verified by construction (rendered 100%-normalized; CSV holds raw counts)</h2>
 <table><thead><tr><th>Tab</th><th>Chart</th><th colspan=2>Condition</th><th colspan=2>Why it's trusted</th></tr></thead><tbody>{inf}</tbody></table>
 
+<h2><span class=ok>&#10003;</span> 2 charts — verified by internal reconciliation (category split of a verified total)</h2>
+<div class=sub>The transactions "Show Categories" toggle is fetched on demand, not seeded, so it is SQL-replayed and checked against a total that IS geometrically verified above.</div>
+<table><thead><tr><th>Tab</th><th>Chart</th><th>Basis</th><th>Residual</th><th colspan=2>Note</th></tr></thead><tbody>{cat}</tbody></table>
+
 <h2>Notes</h2>
 <ul>
 <li><b>"vs" charts.</b> VOA's default view of the Adjusted-vs-Unadjusted and Retail-vs-Other charts renders only one series
@@ -88,11 +105,13 @@ faithful superset of the default view.</li>
 the transactions-page version additionally exposes absolute counts, whose tallest chain stack matches the render at 0.5%.
 The CSVs hold the raw counts behind the normalization.</li>
 <li><b>Data freshness.</b> The live site updates daily. Historical months are stable (verified byte-identical across the
-June→August refresh); the current partial month moves as days are added. This snapshot was refreshed to {SNAPSHOT} to match
-the live charts at verification time.</li>
+June→August refresh); the current partial month moves as days are added. This snapshot was refreshed to {SNAPSHOT} to match the live charts.
+The geometric residual percentages in the first table were measured on the 2026-08-07 render; the seed-extraction method is
+unchanged and historical months are byte-stable across refreshes, so they carry to the {SNAPSHOT} data (only the current
+partial month advances). The category tables were added in the {SNAPSHOT} refresh.</li>
 </ul>"""
     open(os.path.join(HERE,"VERIFICATION.html"),"w").write(doc)
-    print(f"wrote VERIFICATION.html — {len(R)} geometric ✓, {len(INFER)} by-construction")
+    print(f"wrote VERIFICATION.html — {len(R)} geometric ok, {len(INFER)} by-construction, {len(CAT)} by-reconciliation")
 
 if __name__=="__main__":
     main()

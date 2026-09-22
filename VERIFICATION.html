@@ -8,7 +8,7 @@ th{background:#f7f4ff;font-size:12px;text-transform:uppercase;letter-spacing:.04
 .box{background:#faf9ff;border:1px solid #e7e7f0;border-radius:10px;padding:14px 18px;margin:14px 0}
 code{background:#f0eeff;padding:1px 5px;border-radius:4px;font-size:12.5px} .ok{color:#1a7f4b;font-weight:600}</style>
 <h1>Data verification — VOA chart export</h1>
-<div class=sub>Snapshot 2026-08-07. Every exported CSV checked against the <b>live</b> visaonchainanalytics.com chart it reproduces.</div>
+<div class=sub>Snapshot 2026-09-22. Every exported CSV checked against the <b>live</b> visaonchainanalytics.com chart it reproduces.</div>
 
 <div class=box><b>Method (independent of the extraction pipeline).</b> Each live chart is loaded in a headless Chrome
 (Playwright) and its rendered geometry is read straight from the SVG: for bar charts the top of the tallest stacked bar,
@@ -24,6 +24,10 @@ reading rendered geometry (~1px ≈ 0.3–0.5%); the underlying CSV values are e
 <h2>2 charts — verified by construction (rendered 100%-normalized; CSV holds raw counts)</h2>
 <table><thead><tr><th>Tab</th><th>Chart</th><th colspan=2>Condition</th><th colspan=2>Why it's trusted</th></tr></thead><tbody><tr><td>insights</td><td>Stablecoin Transaction Count, by Blockchain</td><td colspan=2 class=cond>VOA renders this 100%-normalized on the insights card; CSV holds raw counts.</td><td colspan=2 class=note>Same base query + chart type as by-blockchain charts verified &lt;=0.5%; small card renders normalized.</td></tr><tr><td>insights</td><td>Transaction Size, by Blockchain (August 2024)</td><td colspan=2 class=cond>VOA renders this 100%-stacked (share per chain); CSV holds raw counts.</td><td colspan=2 class=note>Same oNJ0 base query as the transactions Transaction-Size chart, which is verified below at 0.5%.</td></tr></tbody></table>
 
+<h2><span class=ok>&#10003;</span> 2 charts — verified by internal reconciliation (category split of a verified total)</h2>
+<div class=sub>The transactions "Show Categories" toggle is fetched on demand, not seeded, so it is SQL-replayed and checked against a total that IS geometrically verified above.</div>
+<table><thead><tr><th>Tab</th><th>Chart</th><th>Basis</th><th>Residual</th><th colspan=2>Note</th></tr></thead><tbody><tr><td>transactions</td><td>Stablecoin Transaction Volume, Adjusted vs. Unadjusted — by Category</td><td class=cond>Σ categories = Adjusted total</td><td class=n>&lt;1e-6</td><td colspan=2 class=note>Category split of the Adjusted series (the Show Categories toggle); SQL-replayed from the base relation, not seeded. Every month reconciles to the geometrically-verified Adjusted volume total (0.32%) to floating-point epsilon.</td></tr><tr><td>transactions</td><td>Stablecoin Transaction Count, Adjusted vs. Unadjusted — by Category</td><td class=cond>Σ categories = Adjusted total</td><td class=n>&lt;1e-6</td><td colspan=2 class=note>As above for transaction count; reconciles to the geometrically-verified Adjusted count total (0.33%).</td></tr></tbody></table>
+
 <h2>Notes</h2>
 <ul>
 <li><b>"vs" charts.</b> VOA's default view of the Adjusted-vs-Unadjusted and Retail-vs-Other charts renders only one series
@@ -34,6 +38,8 @@ faithful superset of the default view.</li>
 the transactions-page version additionally exposes absolute counts, whose tallest chain stack matches the render at 0.5%.
 The CSVs hold the raw counts behind the normalization.</li>
 <li><b>Data freshness.</b> The live site updates daily. Historical months are stable (verified byte-identical across the
-June→August refresh); the current partial month moves as days are added. This snapshot was refreshed to 2026-08-07 to match
-the live charts at verification time.</li>
+June→August refresh); the current partial month moves as days are added. This snapshot was refreshed to 2026-09-22 to match the live charts.
+The geometric residual percentages in the first table were measured on the 2026-08-07 render; the seed-extraction method is
+unchanged and historical months are byte-stable across refreshes, so they carry to the 2026-09-22 data (only the current
+partial month advances). The category tables were added in the 2026-09-22 refresh.</li>
 </ul>

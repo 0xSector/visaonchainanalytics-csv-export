@@ -6,14 +6,14 @@ th{background:#faf7ff;position:sticky;top:0} .d{color:#777;font-size:12px} .n{te
 .s{color:#444;font-size:12px;max-width:340px} .q{color:#999;font-size:11px;font-family:ui-monospace,monospace}
 tr:hover td{background:#fcfbff}</style>
 <h1>Visa Onchain Analytics — every chart as CSV</h1>
-<div class=sub>29 charts across 6 tabs.
+<div class=sub>31 charts across 6 tabs.
 Data extracted from each chart's seeded parquet (exact plotted values, all filters/aggregation baked in). Source: Allium.</div>
 <table><thead><tr><th>Tab</th><th>Chart</th><th>Metric</th><th>Group&nbsp;by</th><th>Rows</th><th>Series</th><th>CSV</th><th>share.query</th></tr></thead>
 <tbody><tr><td>home</td>
           <td><b>Average Stablecoin Supply, All Stablecoins</b><br><span class=d>The average supply of stablecoins in circulation, across all stablecoins</span></td>
           <td>mean(supply)</td>
           <td>None</td>
-          <td class=n>92</td>
+          <td class=n>93</td>
           <td class=s>supply</td>
           <td><a href="home__average_stablecoin_supply_all_stablecoins.csv">home__average_stablecoin_supply_all_stablecoins.csv</a></td>
           <td class=q>0ClsIQRR.85j9w2y5tUy8DiyehayO</td></tr><tr><td>addresses</td>
@@ -34,24 +34,24 @@ Data extracted from each chart's seeded parquet (exact plotted values, all filte
           <td><b>Stablecoin Transaction Volume, Adjusted</b><br><span class=d></span></td>
           <td>sum(usd_amount)</td>
           <td>category</td>
-          <td class=n>82</td>
-          <td class=s>Other (Adjusted), Centralized Exchange, Decentralized Exchange, Other Categorized</td>
+          <td class=n>56</td>
+          <td class=s>infra_automation, cex_flow, defi, mint_burn, store_of_value, short_term_pair, investment_trade, payments, unclassified, dust</td>
           <td><a href="insights__stablecoin_transaction_volume_adjusted.csv">insights__stablecoin_transaction_volume_adjusted.csv</a></td>
-          <td class=q>r1OrDWoj.Lmrs1Uvwa0RXc4J3a0vC</td></tr><tr><td>insights</td>
+          <td class=q>r1OrDWoj.ZP6EiBvfCxA3SnPVGuTm</td></tr><tr><td>insights</td>
           <td><b>Stablecoin Transaction Count, Adjusted</b><br><span class=d></span></td>
           <td>sum(txn_count)</td>
           <td>category</td>
-          <td class=n>82</td>
-          <td class=s>Other (Adjusted), Centralized Exchange, Decentralized Exchange, Other Categorized</td>
+          <td class=n>56</td>
+          <td class=s>infra_automation, defi, dust, cex_flow, payments, unclassified, short_term_pair, store_of_value, investment_trade, mint_burn</td>
           <td><a href="insights__stablecoin_transaction_count_adjusted.csv">insights__stablecoin_transaction_count_adjusted.csv</a></td>
-          <td class=q>r1OrDWoj.Lmrs1Uvwa0RXc4J3a0vC</td></tr><tr><td>insights</td>
+          <td class=q>r1OrDWoj.ZP6EiBvfCxA3SnPVGuTm</td></tr><tr><td>insights</td>
           <td><b>Stablecoin Transaction Count, by Blockchain</b><br><span class=d></span></td>
           <td>sum(txn_count)</td>
           <td>chain</td>
-          <td class=n>82</td>
+          <td class=n>56</td>
           <td class=s>ethereum, arbitrum, optimism, base</td>
           <td><a href="insights__stablecoin_transaction_count_by_blockchain.csv">insights__stablecoin_transaction_count_by_blockchain.csv</a></td>
-          <td class=q>r1OrDWoj.Lmrs1Uvwa0RXc4J3a0vC</td></tr><tr><td>insights</td>
+          <td class=q>r1OrDWoj.ZP6EiBvfCxA3SnPVGuTm</td></tr><tr><td>insights</td>
           <td><b>Transaction Size, by Blockchain (August 2024)</b><br><span class=d></span></td>
           <td>sum(txn_count)</td>
           <td>txn_size</td>
@@ -65,7 +65,7 @@ Data extracted from each chart's seeded parquet (exact plotted values, all filte
           <td class=n>13</td>
           <td class=s>base</td>
           <td><a href="insights__transaction_volume_usdc_on_base.csv">insights__transaction_volume_usdc_on_base.csv</a></td>
-          <td class=q>r1OrDWoj.Lmrs1Uvwa0RXc4J3a0vC</td></tr><tr><td>insights</td>
+          <td class=q>r1OrDWoj.ZP6EiBvfCxA3SnPVGuTm</td></tr><tr><td>insights</td>
           <td><b>Average MAUs on PYUSD</b><br><span class=d></span></td>
           <td>mean(total)</td>
           <td>base_asset</td>
@@ -83,22 +83,22 @@ Data extracted from each chart's seeded parquet (exact plotted values, all filte
           <td><b>Loan Volume, by Blockchain</b><br><span class=d></span></td>
           <td>sum(loan_volume_usd)</td>
           <td>chain</td>
-          <td class=n>88</td>
-          <td class=s>ethereum, avalanche, base, bsc, polygon, solana, arbitrum, plasma, optimism, linea, hyperevm, unichain, monad, ink …</td>
+          <td class=n>89</td>
+          <td class=s>ethereum, avalanche, base, solana, bsc, polygon, arbitrum, plasma, optimism, linea, hyperevm, monad, unichain, ink …</td>
           <td><a href="lending__loan_volume_by_blockchain.csv">lending__loan_volume_by_blockchain.csv</a></td>
           <td class=q>yNBUIdL8.hxmh48zQw1WDC1y9ujMh</td></tr><tr><td>lending</td>
           <td><b>Loan Volume, by Stablecoin</b><br><span class=d></span></td>
           <td>sum(loan_volume_usd)</td>
           <td>stablecoin</td>
-          <td class=n>88</td>
+          <td class=n>89</td>
           <td class=s>USDC, USDT, PYUSD, RLUSD, USDG, USDTB, FDUSD, USDH, USDP</td>
           <td><a href="lending__loan_volume_by_stablecoin.csv">lending__loan_volume_by_stablecoin.csv</a></td>
           <td class=q>yNBUIdL8.hxmh48zQw1WDC1y9ujMh</td></tr><tr><td>lending</td>
           <td><b>Loan Volume, by Protocol</b><br><span class=d></span></td>
           <td>sum(loan_volume_usd)</td>
           <td>project</td>
-          <td class=n>88</td>
-          <td class=s>aave, compound, venus_finance, morpho, banker_joe, spark, euler, maple, kamino, benqi, jupiter, iron_bank, fluid, moonwell …</td>
+          <td class=n>89</td>
+          <td class=s>aave, compound, jupiter, venus_finance, morpho, banker_joe, spark, maple, euler, kamino, benqi, iron_bank, fluid, moonwell …</td>
           <td><a href="lending__loan_volume_by_protocol.csv">lending__loan_volume_by_protocol.csv</a></td>
           <td class=q>yNBUIdL8.hxmh48zQw1WDC1y9ujMh</td></tr><tr><td>lending</td>
           <td><b>Outstanding Loans by Protocol</b><br><span class=d></span></td>
@@ -125,91 +125,105 @@ Data extracted from each chart's seeded parquet (exact plotted values, all filte
           <td><b>Average Stablecoin Supply, by Stablecoin</b><br><span class=d>The average supply of stablecoins in circulation, broken down by stablecoin</span></td>
           <td>mean(supply)</td>
           <td>base_asset</td>
-          <td class=n>92</td>
-          <td class=s>USDT, USDC, FDUSD, PYUSD, USDP, USDTB, USDG, RLUSD, EURS, EURC, EURCV, USDH, MUSD</td>
+          <td class=n>93</td>
+          <td class=s>USDT, USDC, FDUSD, PYUSD, USDP, USDG, USDTB, RLUSD, EURC, EURS, EURCV, USDH, MUSD</td>
           <td><a href="supply__average_stablecoin_supply_by_stablecoin.csv">supply__average_stablecoin_supply_by_stablecoin.csv</a></td>
           <td class=q>3JeIkIqY.85j9w2y5tUy8DiyehayO</td></tr><tr><td>supply</td>
           <td><b>Average Stablecoin Supply, by Blockchain</b><br><span class=d>The average supply of stablecoins in circulation, broken down by blockchain</span></td>
           <td>mean(supply)</td>
           <td>chain</td>
-          <td class=n>92</td>
-          <td class=s>ethereum, tron, solana, arbitrum, base, avalanche, ton, aptos, polygon, celo, stellar, sui, optimism, bsc …</td>
+          <td class=n>93</td>
+          <td class=s>ethereum, tron, solana, arbitrum, base, avalanche, ton, hyperevm, aptos, polygon, celo, stellar, sui, x_layer …</td>
           <td><a href="supply__average_stablecoin_supply_by_blockchain.csv">supply__average_stablecoin_supply_by_blockchain.csv</a></td>
           <td class=q>3JeIkIqY.85j9w2y5tUy8DiyehayO</td></tr><tr><td>transactions</td>
           <td><b>Stablecoin Transaction Volume, Adjusted vs. Unadjusted</b><br><span class=d></span></td>
           <td>sum(usd_amount)</td>
           <td>tag</td>
-          <td class=n>106</td>
+          <td class=n>81</td>
           <td class=s>Unadjusted, Adjusted</td>
           <td><a href="transactions__stablecoin_transaction_volume_adjusted_vs_unadjusted.csv">transactions__stablecoin_transaction_volume_adjusted_vs_unadjusted.csv</a></td>
-          <td class=q>JKyWRaJi.Lmrs1Uvwa0RXc4J3a0vC</td></tr><tr><td>transactions</td>
+          <td class=q>JKyWRaJi.ZP6EiBvfCxA3SnPVGuTm</td></tr><tr><td>transactions</td>
+          <td><b>Stablecoin Transaction Volume, Adjusted vs. Unadjusted — by Category</b><br><span class=d> Category split of the Adjusted series (Show Categories toggle).</span></td>
+          <td>sum(usd_amount)</td>
+          <td>category</td>
+          <td class=n>81</td>
+          <td class=s>infra_automation, store_of_value, investment_trade, payments, unclassified, defi, short_term_pair, dust</td>
+          <td><a href="transactions__stablecoin_transaction_volume_adjusted_by_category.csv">transactions__stablecoin_transaction_volume_adjusted_by_category.csv</a></td>
+          <td class=q>JKyWRaJi.ZP6EiBvfCxA3SnPVGuTm</td></tr><tr><td>transactions</td>
           <td><b>Stablecoin Transaction Count, Adjusted vs. Unadjusted</b><br><span class=d></span></td>
           <td>sum(txn_count)</td>
           <td>tag</td>
-          <td class=n>106</td>
+          <td class=n>81</td>
           <td class=s>Unadjusted, Adjusted</td>
           <td><a href="transactions__stablecoin_transaction_count_adjusted_vs_unadjusted.csv">transactions__stablecoin_transaction_count_adjusted_vs_unadjusted.csv</a></td>
-          <td class=q>JKyWRaJi.Lmrs1Uvwa0RXc4J3a0vC</td></tr><tr><td>transactions</td>
+          <td class=q>JKyWRaJi.ZP6EiBvfCxA3SnPVGuTm</td></tr><tr><td>transactions</td>
+          <td><b>Stablecoin Transaction Count, Adjusted vs. Unadjusted — by Category</b><br><span class=d> Category split of the Adjusted series (Show Categories toggle).</span></td>
+          <td>sum(txn_count)</td>
+          <td>category</td>
+          <td class=n>81</td>
+          <td class=s>payments, infra_automation, dust, defi, unclassified, investment_trade, store_of_value, short_term_pair</td>
+          <td><a href="transactions__stablecoin_transaction_count_adjusted_by_category.csv">transactions__stablecoin_transaction_count_adjusted_by_category.csv</a></td>
+          <td class=q>JKyWRaJi.ZP6EiBvfCxA3SnPVGuTm</td></tr><tr><td>transactions</td>
           <td><b>Stablecoin Transaction Volume, Retail Sized vs. Other Adjusted</b><br><span class=d></span></td>
           <td>sum(usd_amount)</td>
           <td>tag</td>
-          <td class=n>106</td>
+          <td class=n>107</td>
           <td class=s>Non Retail Sized, Retail Sized</td>
           <td><a href="transactions__stablecoin_transaction_volume_retail_sized_vs_other_adjusted.csv">transactions__stablecoin_transaction_volume_retail_sized_vs_other_adjusted.csv</a></td>
           <td class=q>JKyWRaJi.8PB6ygqkEz8EsigX7Dpr</td></tr><tr><td>transactions</td>
           <td><b>Stablecoin Transaction Count, Retail Sized vs. Other Adjusted</b><br><span class=d></span></td>
           <td>sum(txn_count)</td>
           <td>tag</td>
-          <td class=n>106</td>
+          <td class=n>107</td>
           <td class=s>Retail Sized, Non Retail Sized</td>
           <td><a href="transactions__stablecoin_transaction_count_retail_sized_vs_other_adjusted.csv">transactions__stablecoin_transaction_count_retail_sized_vs_other_adjusted.csv</a></td>
           <td class=q>JKyWRaJi.8PB6ygqkEz8EsigX7Dpr</td></tr><tr><td>transactions</td>
           <td><b>Daily Transaction Volume, Weekdays vs. Weekends</b><br><span class=d></span></td>
           <td>sum(usd_amount)</td>
           <td>day_type</td>
-          <td class=n>32</td>
+          <td class=n>31</td>
           <td class=s>Weekday, Weekend</td>
           <td><a href="transactions__daily_transaction_volume_weekdays_vs_weekends.csv">transactions__daily_transaction_volume_weekdays_vs_weekends.csv</a></td>
-          <td class=q>JKyWRaJi.Lmrs1Uvwa0RXc4J3a0vC</td></tr><tr><td>transactions</td>
+          <td class=q>JKyWRaJi.ZP6EiBvfCxA3SnPVGuTm</td></tr><tr><td>transactions</td>
           <td><b>Daily Transaction Count, Weekdays vs. Weekends</b><br><span class=d></span></td>
           <td>sum(txn_count)</td>
           <td>day_type</td>
-          <td class=n>32</td>
+          <td class=n>31</td>
           <td class=s>Weekday, Weekend</td>
           <td><a href="transactions__daily_transaction_count_weekdays_vs_weekends.csv">transactions__daily_transaction_count_weekdays_vs_weekends.csv</a></td>
-          <td class=q>JKyWRaJi.Lmrs1Uvwa0RXc4J3a0vC</td></tr><tr><td>transactions</td>
+          <td class=q>JKyWRaJi.ZP6EiBvfCxA3SnPVGuTm</td></tr><tr><td>transactions</td>
           <td><b>Stablecoin Transaction Volume, by Stablecoin</b><br><span class=d></span></td>
           <td>sum(usd_amount)</td>
           <td>base_asset</td>
-          <td class=n>106</td>
-          <td class=s>USDT, USDC, FDUSD, USDP, PYUSD, EURC, USDG, RLUSD, EURS, USDTB, USDH, MUSD, EURCV</td>
+          <td class=n>81</td>
+          <td class=s>USDT, USDC, PYUSD, EURC, USDG, USDP, FDUSD, RLUSD, MUSD, USDH, EURS, USDTB, EURCV</td>
           <td><a href="transactions__stablecoin_transaction_volume_by_stablecoin.csv">transactions__stablecoin_transaction_volume_by_stablecoin.csv</a></td>
-          <td class=q>JKyWRaJi.Lmrs1Uvwa0RXc4J3a0vC</td></tr><tr><td>transactions</td>
+          <td class=q>JKyWRaJi.ZP6EiBvfCxA3SnPVGuTm</td></tr><tr><td>transactions</td>
           <td><b>Stablecoin Transaction Count, by Stablecoin</b><br><span class=d></span></td>
           <td>sum(txn_count)</td>
           <td>base_asset</td>
-          <td class=n>106</td>
-          <td class=s>USDT, USDC, PYUSD, EURC, USDP, FDUSD, MUSD, USDG, USDH, EURS, RLUSD, EURCV, USDTB</td>
+          <td class=n>81</td>
+          <td class=s>USDT, USDC, EURC, PYUSD, USDP, MUSD, USDG, FDUSD, USDH, EURCV, EURS, RLUSD, USDTB</td>
           <td><a href="transactions__stablecoin_transaction_count_by_stablecoin.csv">transactions__stablecoin_transaction_count_by_stablecoin.csv</a></td>
-          <td class=q>JKyWRaJi.Lmrs1Uvwa0RXc4J3a0vC</td></tr><tr><td>transactions</td>
+          <td class=q>JKyWRaJi.ZP6EiBvfCxA3SnPVGuTm</td></tr><tr><td>transactions</td>
           <td><b>Stablecoin Transaction Volume, by Blockchain</b><br><span class=d></span></td>
           <td>sum(usd_amount)</td>
           <td>chain</td>
-          <td class=n>106</td>
-          <td class=s>ethereum, tron, solana, bsc, base, arbitrum, polygon, avalanche, optimism, aptos, plasma, sui, ton, stellar …</td>
+          <td class=n>81</td>
+          <td class=s>tron, ethereum, bsc, solana, arbitrum, polygon, ton, base, avalanche, stellar, optimism, plasma, hyperevm, monad …</td>
           <td><a href="transactions__stablecoin_transaction_volume_by_blockchain.csv">transactions__stablecoin_transaction_volume_by_blockchain.csv</a></td>
-          <td class=q>JKyWRaJi.Lmrs1Uvwa0RXc4J3a0vC</td></tr><tr><td>transactions</td>
+          <td class=q>JKyWRaJi.ZP6EiBvfCxA3SnPVGuTm</td></tr><tr><td>transactions</td>
           <td><b>Stablecoin Transaction Count, by Blockchain</b><br><span class=d></span></td>
           <td>sum(txn_count)</td>
           <td>chain</td>
-          <td class=n>106</td>
-          <td class=s>tron, bsc, solana, ethereum, polygon, arbitrum, base, celo, optimism, avalanche, stellar, aptos, ton, worldchain …</td>
+          <td class=n>81</td>
+          <td class=s>tron, bsc, solana, polygon, ethereum, stellar, base, celo, arbitrum, ton, optimism, avalanche, worldchain, monad …</td>
           <td><a href="transactions__stablecoin_transaction_count_by_blockchain.csv">transactions__stablecoin_transaction_count_by_blockchain.csv</a></td>
-          <td class=q>JKyWRaJi.Lmrs1Uvwa0RXc4J3a0vC</td></tr><tr><td>transactions</td>
+          <td class=q>JKyWRaJi.ZP6EiBvfCxA3SnPVGuTm</td></tr><tr><td>transactions</td>
           <td><b>Transaction Size, by Blockchain</b><br><span class=d></span></td>
           <td>sum(txn_count)</td>
           <td>txn_size</td>
-          <td class=n>20</td>
+          <td class=n>22</td>
           <td class=s>a. &lt; $100, b. $100 - $1k, c. $1k - $10k, d. $10k - $100k, e. $100k - $1M, f. $1M - $10M, g. &gt; $10M</td>
           <td><a href="transactions__transaction_size_by_blockchain.csv">transactions__transaction_size_by_blockchain.csv</a></td>
           <td class=q>JKyWRaJi.oNJ0xst6EMyJegWBUeeJ</td></tr></tbody></table>
