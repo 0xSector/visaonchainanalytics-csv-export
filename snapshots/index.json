@@ -1,0 +1,4499 @@
+{
+ "snapshots": [
+  {
+   "id": "2026-06-04",
+   "pulled_at": "2026-06-04",
+   "trigger": "backfill",
+   "note": "reconstructed from git history (this repo @ 2fda8ea); pull date = commit date, exact pull time unknown",
+   "prev": null,
+   "charts": 29,
+   "hash": "302c2f02ba8cf7fef64b6fd468af1c30bc4da3fa163ba7a029c647ed19fd0346",
+   "files": [
+    "addresses__average_monthly_active_unique_stablecoin_wallet_addresses_by_blockchai.csv",
+    "addresses__average_monthly_active_unique_stablecoin_wallet_addresses_by_stablecoi.csv",
+    "home__average_stablecoin_supply_all_stablecoins.csv",
+    "insights__average_maus_on_pyusd.csv",
+    "insights__average_pyusd_supply.csv",
+    "insights__stablecoin_transaction_count_adjusted.csv",
+    "insights__stablecoin_transaction_count_by_blockchain.csv",
+    "insights__stablecoin_transaction_volume_adjusted.csv",
+    "insights__transaction_size_by_blockchain_august_2024.csv",
+    "insights__transaction_volume_usdc_on_base.csv",
+    "lending__loan_volume_by_blockchain.csv",
+    "lending__loan_volume_by_protocol.csv",
+    "lending__loan_volume_by_stablecoin.csv",
+    "lending__outstanding_loans_by_asset.csv",
+    "lending__outstanding_loans_by_chain.csv",
+    "lending__outstanding_loans_by_protocol.csv",
+    "supply__average_stablecoin_supply_by_blockchain.csv",
+    "supply__average_stablecoin_supply_by_stablecoin.csv",
+    "transactions__daily_transaction_count_weekdays_vs_weekends.csv",
+    "transactions__daily_transaction_volume_weekdays_vs_weekends.csv",
+    "transactions__stablecoin_transaction_count_adjusted_vs_unadjusted.csv",
+    "transactions__stablecoin_transaction_count_by_blockchain.csv",
+    "transactions__stablecoin_transaction_count_by_stablecoin.csv",
+    "transactions__stablecoin_transaction_count_retail_sized_vs_other_adjusted.csv",
+    "transactions__stablecoin_transaction_volume_adjusted_vs_unadjusted.csv",
+    "transactions__stablecoin_transaction_volume_by_blockchain.csv",
+    "transactions__stablecoin_transaction_volume_by_stablecoin.csv",
+    "transactions__stablecoin_transaction_volume_retail_sized_vs_other_adjusted.csv",
+    "transactions__transaction_size_by_blockchain.csv"
+   ],
+   "checks": "passed",
+   "new_charts": [],
+   "revised": {}
+  },
+  {
+   "id": "2026-06-08",
+   "pulled_at": "2026-06-08",
+   "trigger": "backfill",
+   "note": "reconstructed from git history (this repo @ d434444); pull date = commit date, exact pull time unknown",
+   "prev": "2026-06-04",
+   "charts": 29,
+   "hash": "ce37796830690d40d41deaedfa69812bd10b7ed51860cfd266117ccdf8f1ff44",
+   "files": [
+    "addresses__average_monthly_active_unique_stablecoin_wallet_addresses_by_blockchai.csv",
+    "addresses__average_monthly_active_unique_stablecoin_wallet_addresses_by_stablecoi.csv",
+    "home__average_stablecoin_supply_all_stablecoins.csv",
+    "insights__average_maus_on_pyusd.csv",
+    "insights__average_pyusd_supply.csv",
+    "insights__stablecoin_transaction_count_adjusted.csv",
+    "insights__stablecoin_transaction_count_by_blockchain.csv",
+    "insights__stablecoin_transaction_volume_adjusted.csv",
+    "insights__transaction_size_by_blockchain_august_2024.csv",
+    "insights__transaction_volume_usdc_on_base.csv",
+    "lending__loan_volume_by_blockchain.csv",
+    "lending__loan_volume_by_protocol.csv",
+    "lending__loan_volume_by_stablecoin.csv",
+    "lending__outstanding_loans_by_asset.csv",
+    "lending__outstanding_loans_by_chain.csv",
+    "lending__outstanding_loans_by_protocol.csv",
+    "supply__average_stablecoin_supply_by_blockchain.csv",
+    "supply__average_stablecoin_supply_by_stablecoin.csv",
+    "transactions__daily_transaction_count_weekdays_vs_weekends.csv",
+    "transactions__daily_transaction_volume_weekdays_vs_weekends.csv",
+    "transactions__stablecoin_transaction_count_adjusted_vs_unadjusted.csv",
+    "transactions__stablecoin_transaction_count_by_blockchain.csv",
+    "transactions__stablecoin_transaction_count_by_stablecoin.csv",
+    "transactions__stablecoin_transaction_count_retail_sized_vs_other_adjusted.csv",
+    "transactions__stablecoin_transaction_volume_adjusted_vs_unadjusted.csv",
+    "transactions__stablecoin_transaction_volume_by_blockchain.csv",
+    "transactions__stablecoin_transaction_volume_by_stablecoin.csv",
+    "transactions__stablecoin_transaction_volume_retail_sized_vs_other_adjusted.csv",
+    "transactions__transaction_size_by_blockchain.csv"
+   ],
+   "checks": "passed",
+   "new_charts": [],
+   "revised": {
+    "home__average_stablecoin_supply_all_stablecoins.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 89,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 89,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2019-02-01",
+       "series": "supply",
+       "old": 442536041.920015,
+       "new": 442203718.672764,
+       "pct": -0.08,
+       "share_pct": 0.08
+      },
+      {
+       "period": "2019-03-01",
+       "series": "supply",
+       "old": 460852369.920015,
+       "new": 460520046.672764,
+       "pct": -0.07,
+       "share_pct": 0.07
+      },
+      {
+       "period": "2019-01-01",
+       "series": "supply",
+       "old": 531542156.800015,
+       "new": 531209833.552764,
+       "pct": -0.06,
+       "share_pct": 0.06
+      }
+     ]
+    },
+    "insights__stablecoin_transaction_count_adjusted.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 82,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 136,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2024-07-01",
+       "series": "Other Categorized",
+       "old": 2392262.0,
+       "new": 1845749.0,
+       "pct": -22.85,
+       "share_pct": 0.52
+      },
+      {
+       "period": "2024-04-01",
+       "series": "Other Categorized",
+       "old": 2391408.0,
+       "new": 1853680.0,
+       "pct": -22.49,
+       "share_pct": 0.51
+      },
+      {
+       "period": "2024-06-01",
+       "series": "Other Categorized",
+       "old": 1913309.0,
+       "new": 1404787.0,
+       "pct": -26.58,
+       "share_pct": 0.5
+      }
+     ]
+    },
+    "insights__stablecoin_transaction_volume_adjusted.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 82,
+     "material": true,
+     "material_periods": 19,
+     "material_cells": 21,
+     "first_material": "2023-01-01",
+     "last_material": "2024-08-01",
+     "minor_cells": 170,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2023-06-01",
+       "series": "Other Categorized",
+       "old": 50466966556.32698,
+       "new": 18188640925.74189,
+       "pct": -63.96,
+       "share_pct": 9.19
+      },
+      {
+       "period": "2023-09-01",
+       "series": "Other Categorized",
+       "old": 31811266962.567272,
+       "new": 9289122778.726353,
+       "pct": -70.8,
+       "share_pct": 8.0
+      },
+      {
+       "period": "2023-10-01",
+       "series": "Other Categorized",
+       "old": 36460272879.91696,
+       "new": 12821465882.449753,
+       "pct": -64.83,
+       "share_pct": 7.5
+      }
+     ]
+    },
+    "insights__transaction_size_by_blockchain_august_2024.csv": {
+     "kind": "categorical",
+     "cutoff": null,
+     "compared": 4,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 6,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "base",
+       "series": "a. < $100",
+       "old": 9048300.0,
+       "new": 9048336.0,
+       "pct": 0.0,
+       "share_pct": 0.0
+      },
+      {
+       "period": "base",
+       "series": "b. $100 - $1k",
+       "old": 3060387.0,
+       "new": 3060359.0,
+       "pct": -0.0,
+       "share_pct": 0.0
+      },
+      {
+       "period": "ethereum",
+       "series": "b. $100 - $1k",
+       "old": 2469882.0,
+       "new": 2469887.0,
+       "pct": 0.0,
+       "share_pct": 0.0
+      }
+     ]
+    },
+    "lending__loan_volume_by_protocol.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 85,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 0,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [
+      "curvance"
+     ],
+     "largest": []
+    },
+    "supply__average_stablecoin_supply_by_blockchain.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 89,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 274,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2019-02-01",
+       "series": "ethereum",
+       "old": 442536041.920015,
+       "new": 442203718.672764,
+       "pct": -0.08,
+       "share_pct": 0.08
+      },
+      {
+       "period": "2019-03-01",
+       "series": "ethereum",
+       "old": 460852369.920015,
+       "new": 460520046.672764,
+       "pct": -0.07,
+       "share_pct": 0.07
+      },
+      {
+       "period": "2019-01-01",
+       "series": "ethereum",
+       "old": 531542156.800015,
+       "new": 531209833.552764,
+       "pct": -0.06,
+       "share_pct": 0.06
+      }
+     ]
+    },
+    "supply__average_stablecoin_supply_by_stablecoin.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 89,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 170,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2019-02-01",
+       "series": "EURS",
+       "old": 36017426.686586,
+       "new": 35685103.439335,
+       "pct": -0.92,
+       "share_pct": 0.08
+      },
+      {
+       "period": "2019-03-01",
+       "series": "EURS",
+       "old": 36017426.686586,
+       "new": 35685103.439335,
+       "pct": -0.92,
+       "share_pct": 0.07
+      },
+      {
+       "period": "2019-01-01",
+       "series": "EURS",
+       "old": 36017426.686586,
+       "new": 35685103.439335,
+       "pct": -0.92,
+       "share_pct": 0.06
+      }
+     ]
+    },
+    "transactions__daily_transaction_count_weekdays_vs_weekends.csv": {
+     "kind": "daily",
+     "cutoff": "2026-06-01",
+     "compared": 24,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 24,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2026-05-11",
+       "series": "Weekday",
+       "old": 7100136.0,
+       "new": 7030668.0,
+       "pct": -0.98,
+       "share_pct": 0.98
+      },
+      {
+       "period": "2026-05-29",
+       "series": "Weekday",
+       "old": 6703541.0,
+       "new": 6641493.0,
+       "pct": -0.93,
+       "share_pct": 0.93
+      },
+      {
+       "period": "2026-05-26",
+       "series": "Weekday",
+       "old": 6821270.0,
+       "new": 6759359.0,
+       "pct": -0.91,
+       "share_pct": 0.91
+      }
+     ]
+    },
+    "transactions__daily_transaction_volume_weekdays_vs_weekends.csv": {
+     "kind": "daily",
+     "cutoff": "2026-06-01",
+     "compared": 24,
+     "material": true,
+     "material_periods": 3,
+     "material_cells": 3,
+     "first_material": "2026-05-28",
+     "last_material": "2026-05-30",
+     "minor_cells": 21,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2026-05-29",
+       "series": "Weekday",
+       "old": 33244398799.46757,
+       "new": 32706960307.830605,
+       "pct": -1.62,
+       "share_pct": 1.62
+      },
+      {
+       "period": "2026-05-30",
+       "series": "Weekend",
+       "old": 15769965751.636875,
+       "new": 15548760967.090206,
+       "pct": -1.4,
+       "share_pct": 1.4
+      },
+      {
+       "period": "2026-05-28",
+       "series": "Weekday",
+       "old": 38686550148.83002,
+       "new": 38284195138.529976,
+       "pct": -1.04,
+       "share_pct": 1.04
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_count_adjusted_vs_unadjusted.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 103,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 126,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2025-08-01",
+       "series": "Unadjusted",
+       "old": 925711327.0,
+       "new": 929449667.0,
+       "pct": 0.4,
+       "share_pct": 0.33
+      },
+      {
+       "period": "2025-08-01",
+       "series": "Adjusted",
+       "old": 202800469.0,
+       "new": 199062129.0,
+       "pct": -1.84,
+       "share_pct": 0.33
+      },
+      {
+       "period": "2025-02-01",
+       "series": "Unadjusted",
+       "old": 412784077.0,
+       "new": 414325734.0,
+       "pct": 0.37,
+       "share_pct": 0.29
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_count_by_blockchain.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 103,
+     "material": true,
+     "material_periods": 10,
+     "material_cells": 10,
+     "first_material": "2025-02-01",
+     "last_material": "2026-02-01",
+     "minor_cells": 503,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2025-08-01",
+       "series": "arbitrum",
+       "old": 13738250.0,
+       "new": 10395823.0,
+       "pct": -24.33,
+       "share_pct": 1.65
+      },
+      {
+       "period": "2025-05-01",
+       "series": "arbitrum",
+       "old": 11166250.0,
+       "new": 8760135.0,
+       "pct": -21.55,
+       "share_pct": 1.24
+      },
+      {
+       "period": "2025-10-01",
+       "series": "arbitrum",
+       "old": 12548626.0,
+       "new": 9657685.0,
+       "pct": -23.04,
+       "share_pct": 1.23
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_count_by_stablecoin.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 103,
+     "material": true,
+     "material_periods": 6,
+     "material_cells": 6,
+     "first_material": "2025-05-01",
+     "last_material": "2026-02-01",
+     "minor_cells": 275,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2025-08-01",
+       "series": "USDC",
+       "old": 59477324.0,
+       "new": 56215681.0,
+       "pct": -5.48,
+       "share_pct": 1.61
+      },
+      {
+       "period": "2025-10-01",
+       "series": "USDC",
+       "old": 72058343.0,
+       "new": 69009898.0,
+       "pct": -4.23,
+       "share_pct": 1.3
+      },
+      {
+       "period": "2025-11-01",
+       "series": "USDC",
+       "old": 66489641.0,
+       "new": 63746679.0,
+       "pct": -4.13,
+       "share_pct": 1.25
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_count_retail_sized_vs_other_adjusted.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 103,
+     "material": true,
+     "material_periods": 4,
+     "material_cells": 4,
+     "first_material": "2025-03-01",
+     "last_material": "2026-02-01",
+     "minor_cells": 113,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2025-08-01",
+       "series": "Non Retail Sized",
+       "old": 82331536.0,
+       "new": 79454051.0,
+       "pct": -3.49,
+       "share_pct": 1.42
+      },
+      {
+       "period": "2025-03-01",
+       "series": "Non Retail Sized",
+       "old": 52232945.0,
+       "new": 50772666.0,
+       "pct": -2.8,
+       "share_pct": 1.08
+      },
+      {
+       "period": "2025-10-01",
+       "series": "Non Retail Sized",
+       "old": 98832159.0,
+       "new": 96349529.0,
+       "pct": -2.51,
+       "share_pct": 1.06
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_volume_adjusted_vs_unadjusted.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 103,
+     "material": true,
+     "material_periods": 22,
+     "material_cells": 44,
+     "first_material": "2023-03-01",
+     "last_material": "2025-07-01",
+     "minor_cells": 115,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2023-06-01",
+       "series": "Adjusted",
+       "old": 351172054430.90027,
+       "new": 318915377812.4439,
+       "pct": -9.19,
+       "share_pct": 4.16
+      },
+      {
+       "period": "2023-06-01",
+       "series": "Unadjusted",
+       "old": 424203726610.8833,
+       "new": 456459530598.1702,
+       "pct": 7.6,
+       "share_pct": 4.16
+      },
+      {
+       "period": "2023-09-01",
+       "series": "Adjusted",
+       "old": 281494569743.0625,
+       "new": 258367314788.16223,
+       "pct": -8.22,
+       "share_pct": 3.78
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_volume_by_blockchain.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 103,
+     "material": true,
+     "material_periods": 34,
+     "material_cells": 34,
+     "first_material": "2023-01-01",
+     "last_material": "2025-11-01",
+     "minor_cells": 462,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2023-06-01",
+       "series": "ethereum",
+       "old": 158654642879.39075,
+       "new": 126344487196.32489,
+       "pct": -20.37,
+       "share_pct": 9.2
+      },
+      {
+       "period": "2025-03-01",
+       "series": "ethereum",
+       "old": 348952384917.5116,
+       "new": 279724547401.7008,
+       "pct": -19.84,
+       "share_pct": 9.15
+      },
+      {
+       "period": "2025-04-01",
+       "series": "ethereum",
+       "old": 372560567131.83264,
+       "new": 300752937907.4593,
+       "pct": -19.27,
+       "share_pct": 9.01
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_volume_by_stablecoin.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 103,
+     "material": true,
+     "material_periods": 33,
+     "material_cells": 50,
+     "first_material": "2023-03-01",
+     "last_material": "2025-11-01",
+     "minor_cells": 337,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2023-06-01",
+       "series": "USDC",
+       "old": 117641968234.12228,
+       "new": 89982600444.24536,
+       "pct": -23.51,
+       "share_pct": 7.88
+      },
+      {
+       "period": "2025-04-01",
+       "series": "USDC",
+       "old": 356435709976.539,
+       "new": 295853633367.0173,
+       "pct": -17.0,
+       "share_pct": 7.6
+      },
+      {
+       "period": "2025-03-01",
+       "series": "USDC",
+       "old": 315680923094.9317,
+       "new": 258684714259.8593,
+       "pct": -18.06,
+       "share_pct": 7.53
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_volume_retail_sized_vs_other_adjusted.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 103,
+     "material": true,
+     "material_periods": 35,
+     "material_cells": 35,
+     "first_material": "2023-01-01",
+     "last_material": "2025-12-01",
+     "minor_cells": 126,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2025-03-01",
+       "series": "Non Retail Sized",
+       "old": 751753550913.177,
+       "new": 679907845789.8861,
+       "pct": -9.56,
+       "share_pct": 9.49
+      },
+      {
+       "period": "2025-04-01",
+       "series": "Non Retail Sized",
+       "old": 792357684191.4154,
+       "new": 718327350576.1826,
+       "pct": -9.34,
+       "share_pct": 9.29
+      },
+      {
+       "period": "2023-06-01",
+       "series": "Non Retail Sized",
+       "old": 348871670044.2477,
+       "new": 316615018250.29193,
+       "pct": -9.25,
+       "share_pct": 9.19
+      }
+     ]
+    },
+    "transactions__transaction_size_by_blockchain.csv": {
+     "kind": "categorical",
+     "cutoff": null,
+     "compared": 20,
+     "material": true,
+     "material_periods": 3,
+     "material_cells": 3,
+     "first_material": "celo",
+     "last_material": "stable",
+     "minor_cells": 125,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "plasma",
+       "series": "a. < $100",
+       "old": 17052543.0,
+       "new": 17399633.0,
+       "pct": 2.04,
+       "share_pct": 1.31
+      },
+      {
+       "period": "celo",
+       "series": "a. < $100",
+       "old": 2447424110.0,
+       "new": 2475066964.0,
+       "pct": 1.13,
+       "share_pct": 1.11
+      },
+      {
+       "period": "stable",
+       "series": "a. < $100",
+       "old": 156376.0,
+       "new": 158451.0,
+       "pct": 1.33,
+       "share_pct": 1.04
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "2026-07-08",
+   "pulled_at": "2026-07-08",
+   "trigger": "backfill",
+   "note": "reconstructed from git history (a private working copy of this pipeline); pull date = commit date, exact pull time unknown",
+   "prev": "2026-06-08",
+   "charts": 29,
+   "hash": "05f324369460dea5e15d6b878cec165a479835e18c7eb0ab879ed7de89bb474e",
+   "files": [
+    "addresses__average_monthly_active_unique_stablecoin_wallet_addresses_by_blockchai.csv",
+    "addresses__average_monthly_active_unique_stablecoin_wallet_addresses_by_stablecoi.csv",
+    "home__average_stablecoin_supply_all_stablecoins.csv",
+    "insights__average_maus_on_pyusd.csv",
+    "insights__average_pyusd_supply.csv",
+    "insights__stablecoin_transaction_count_adjusted.csv",
+    "insights__stablecoin_transaction_count_by_blockchain.csv",
+    "insights__stablecoin_transaction_volume_adjusted.csv",
+    "insights__transaction_size_by_blockchain_august_2024.csv",
+    "insights__transaction_volume_usdc_on_base.csv",
+    "lending__loan_volume_by_blockchain.csv",
+    "lending__loan_volume_by_protocol.csv",
+    "lending__loan_volume_by_stablecoin.csv",
+    "lending__outstanding_loans_by_asset.csv",
+    "lending__outstanding_loans_by_chain.csv",
+    "lending__outstanding_loans_by_protocol.csv",
+    "supply__average_stablecoin_supply_by_blockchain.csv",
+    "supply__average_stablecoin_supply_by_stablecoin.csv",
+    "transactions__daily_transaction_count_weekdays_vs_weekends.csv",
+    "transactions__daily_transaction_volume_weekdays_vs_weekends.csv",
+    "transactions__stablecoin_transaction_count_adjusted_vs_unadjusted.csv",
+    "transactions__stablecoin_transaction_count_by_blockchain.csv",
+    "transactions__stablecoin_transaction_count_by_stablecoin.csv",
+    "transactions__stablecoin_transaction_count_retail_sized_vs_other_adjusted.csv",
+    "transactions__stablecoin_transaction_volume_adjusted_vs_unadjusted.csv",
+    "transactions__stablecoin_transaction_volume_by_blockchain.csv",
+    "transactions__stablecoin_transaction_volume_by_stablecoin.csv",
+    "transactions__stablecoin_transaction_volume_retail_sized_vs_other_adjusted.csv",
+    "transactions__transaction_size_by_blockchain.csv"
+   ],
+   "checks": "passed",
+   "new_charts": [],
+   "revised": {
+    "addresses__average_monthly_active_unique_stablecoin_wallet_addresses_by_blockchai.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 102,
+     "material": true,
+     "material_periods": 1,
+     "material_cells": 1,
+     "first_material": "2026-04-01",
+     "last_material": "2026-04-01",
+     "minor_cells": 19,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2026-04-01",
+       "series": "bsc",
+       "old": 20167152.0,
+       "new": 21441937.0,
+       "pct": 6.32,
+       "share_pct": 2.0
+      },
+      {
+       "period": "2026-04-01",
+       "series": "tron",
+       "old": 10125361.0,
+       "new": 10651689.0,
+       "pct": 5.2,
+       "share_pct": 0.83
+      },
+      {
+       "period": "2026-04-01",
+       "series": "solana",
+       "old": 5397162.0,
+       "new": 5730077.0,
+       "pct": 6.17,
+       "share_pct": 0.52
+      }
+     ]
+    },
+    "addresses__average_monthly_active_unique_stablecoin_wallet_addresses_by_stablecoi.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 102,
+     "material": true,
+     "material_periods": 1,
+     "material_cells": 2,
+     "first_material": "2026-04-01",
+     "last_material": "2026-04-01",
+     "minor_cells": 11,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2026-04-01",
+       "series": "USDT",
+       "old": 43939310.0,
+       "new": 46153934.0,
+       "pct": 5.04,
+       "share_pct": 3.49
+      },
+      {
+       "period": "2026-04-01",
+       "series": "USDC",
+       "old": 16229829.0,
+       "new": 17128343.0,
+       "pct": 5.54,
+       "share_pct": 1.41
+      },
+      {
+       "period": "2026-04-01",
+       "series": "PYUSD",
+       "old": 71593.0,
+       "new": 75439.0,
+       "pct": 5.37,
+       "share_pct": 0.01
+      }
+     ]
+    },
+    "home__average_stablecoin_supply_all_stablecoins.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 89,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 89,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2019-02-01",
+       "series": "supply",
+       "old": 442203718.672764,
+       "new": 441837603.306517,
+       "pct": -0.08,
+       "share_pct": 0.08
+      },
+      {
+       "period": "2019-03-01",
+       "series": "supply",
+       "old": 460520046.672764,
+       "new": 460153931.306517,
+       "pct": -0.08,
+       "share_pct": 0.08
+      },
+      {
+       "period": "2019-01-01",
+       "series": "supply",
+       "old": 531209833.552764,
+       "new": 530843718.186517,
+       "pct": -0.07,
+       "share_pct": 0.07
+      }
+     ]
+    },
+    "insights__stablecoin_transaction_count_adjusted.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 82,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 209,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2020-07-01",
+       "series": "Other Categorized",
+       "old": 40741.0,
+       "new": 36320.0,
+       "pct": -10.85,
+       "share_pct": 0.07
+      },
+      {
+       "period": "2020-07-01",
+       "series": "Centralized Exchange",
+       "old": 2192128.0,
+       "new": 2196450.0,
+       "pct": 0.2,
+       "share_pct": 0.06
+      },
+      {
+       "period": "2020-08-01",
+       "series": "Other Categorized",
+       "old": 40802.0,
+       "new": 36013.0,
+       "pct": -11.74,
+       "share_pct": 0.06
+      }
+     ]
+    },
+    "insights__stablecoin_transaction_volume_adjusted.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 82,
+     "material": true,
+     "material_periods": 19,
+     "material_cells": 44,
+     "first_material": "2023-01-01",
+     "last_material": "2024-08-01",
+     "minor_cells": 199,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2023-06-01",
+       "series": "Other Categorized",
+       "old": 18188640925.74189,
+       "new": 50524490043.95274,
+       "pct": 177.78,
+       "share_pct": 9.21
+      },
+      {
+       "period": "2023-09-01",
+       "series": "Other Categorized",
+       "old": 9289122778.726353,
+       "new": 30765018407.552094,
+       "pct": 231.19,
+       "share_pct": 7.68
+      },
+      {
+       "period": "2023-08-01",
+       "series": "Other Categorized",
+       "old": 13009542302.751553,
+       "new": 35354047891.50154,
+       "pct": 171.75,
+       "share_pct": 7.09
+      }
+     ]
+    },
+    "insights__transaction_size_by_blockchain_august_2024.csv": {
+     "kind": "categorical",
+     "cutoff": null,
+     "compared": 4,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 8,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "base",
+       "series": "a. < $100",
+       "old": 9048336.0,
+       "new": 9048390.0,
+       "pct": 0.0,
+       "share_pct": 0.0
+      },
+      {
+       "period": "base",
+       "series": "b. $100 - $1k",
+       "old": 3060359.0,
+       "new": 3060321.0,
+       "pct": -0.0,
+       "share_pct": 0.0
+      },
+      {
+       "period": "base",
+       "series": "c. $1k - $10k",
+       "old": 1353266.0,
+       "new": 1353255.0,
+       "pct": -0.0,
+       "share_pct": 0.0
+      }
+     ]
+    },
+    "lending__loan_volume_by_blockchain.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 85,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 12,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [
+      "katana"
+     ],
+     "largest": [
+      {
+       "period": "2026-03-01",
+       "series": "katana",
+       "old": 0.0,
+       "new": 77261951.589127,
+       "pct": null,
+       "share_pct": 0.4
+      },
+      {
+       "period": "2026-04-01",
+       "series": "katana",
+       "old": 0.0,
+       "new": 64566060.321506,
+       "pct": null,
+       "share_pct": 0.36
+      },
+      {
+       "period": "2026-01-01",
+       "series": "katana",
+       "old": 0.0,
+       "new": 44567709.938814,
+       "pct": null,
+       "share_pct": 0.26
+      }
+     ]
+    },
+    "lending__loan_volume_by_protocol.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 85,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 11,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [
+      "fira"
+     ],
+     "largest": [
+      {
+       "period": "2026-03-01",
+       "series": "morpho_blue",
+       "old": 2732150587.574883,
+       "new": 2809412539.164011,
+       "pct": 2.83,
+       "share_pct": 0.4
+      },
+      {
+       "period": "2026-04-01",
+       "series": "morpho_blue",
+       "old": 2114398512.286037,
+       "new": 2178964577.665227,
+       "pct": 3.05,
+       "share_pct": 0.36
+      },
+      {
+       "period": "2026-01-01",
+       "series": "morpho_blue",
+       "old": 1795178402.328027,
+       "new": 1839746112.26684,
+       "pct": 2.48,
+       "share_pct": 0.26
+      }
+     ]
+    },
+    "lending__loan_volume_by_stablecoin.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 85,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 22,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2026-04-01",
+       "series": "USDT",
+       "old": 8486204252.815671,
+       "new": 8534699125.08933,
+       "pct": 0.57,
+       "share_pct": 0.27
+      },
+      {
+       "period": "2026-01-01",
+       "series": "USDC",
+       "old": 9881479882.961756,
+       "new": 9922167094.541838,
+       "pct": 0.41,
+       "share_pct": 0.24
+      },
+      {
+       "period": "2026-05-01",
+       "series": "USDC",
+       "old": 4970011082.701838,
+       "new": 4994924108.506866,
+       "pct": 0.5,
+       "share_pct": 0.22
+      }
+     ]
+    },
+    "supply__average_stablecoin_supply_by_blockchain.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 89,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 274,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2019-02-01",
+       "series": "ethereum",
+       "old": 442203718.672764,
+       "new": 441837603.306517,
+       "pct": -0.08,
+       "share_pct": 0.08
+      },
+      {
+       "period": "2019-03-01",
+       "series": "ethereum",
+       "old": 460520046.672764,
+       "new": 460153931.306517,
+       "pct": -0.08,
+       "share_pct": 0.08
+      },
+      {
+       "period": "2019-01-01",
+       "series": "ethereum",
+       "old": 531209833.552764,
+       "new": 530843718.186517,
+       "pct": -0.07,
+       "share_pct": 0.07
+      }
+     ]
+    },
+    "supply__average_stablecoin_supply_by_stablecoin.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 89,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 170,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2019-02-01",
+       "series": "EURS",
+       "old": 35685103.439335,
+       "new": 35318988.073088,
+       "pct": -1.03,
+       "share_pct": 0.08
+      },
+      {
+       "period": "2019-03-01",
+       "series": "EURS",
+       "old": 35685103.439335,
+       "new": 35318988.073088,
+       "pct": -1.03,
+       "share_pct": 0.08
+      },
+      {
+       "period": "2019-01-01",
+       "series": "EURS",
+       "old": 35685103.439335,
+       "new": 35318988.073088,
+       "pct": -1.03,
+       "share_pct": 0.07
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_count_adjusted_vs_unadjusted.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 103,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 176,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2026-05-01",
+       "series": "Unadjusted",
+       "old": 1166119365.0,
+       "new": 1167488204.0,
+       "pct": 0.12,
+       "share_pct": 0.1
+      },
+      {
+       "period": "2026-05-01",
+       "series": "Adjusted",
+       "old": 209437234.0,
+       "new": 208068395.0,
+       "pct": -0.65,
+       "share_pct": 0.1
+      },
+      {
+       "period": "2026-04-01",
+       "series": "Unadjusted",
+       "old": 1372392418.0,
+       "new": 1372836209.0,
+       "pct": 0.03,
+       "share_pct": 0.03
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_count_by_blockchain.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 103,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 698,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2026-05-01",
+       "series": "bsc",
+       "old": 74278986.0,
+       "new": 73883874.0,
+       "pct": -0.53,
+       "share_pct": 0.19
+      },
+      {
+       "period": "2026-05-01",
+       "series": "solana",
+       "old": 21731326.0,
+       "new": 21348792.0,
+       "pct": -1.76,
+       "share_pct": 0.18
+      },
+      {
+       "period": "2026-05-01",
+       "series": "tron",
+       "old": 51400760.0,
+       "new": 51166353.0,
+       "pct": -0.46,
+       "share_pct": 0.11
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_count_by_stablecoin.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 103,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 351,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2026-05-01",
+       "series": "USDT",
+       "old": 152182226.0,
+       "new": 151386528.0,
+       "pct": -0.52,
+       "share_pct": 0.38
+      },
+      {
+       "period": "2026-05-01",
+       "series": "USDC",
+       "old": 56627416.0,
+       "new": 56058901.0,
+       "pct": -1.0,
+       "share_pct": 0.27
+      },
+      {
+       "period": "2026-04-01",
+       "series": "USDT",
+       "old": 149924925.0,
+       "new": 149677829.0,
+       "pct": -0.16,
+       "share_pct": 0.12
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_count_retail_sized_vs_other_adjusted.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 103,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 173,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2026-05-01",
+       "series": "Retail Sized",
+       "old": 146589182.0,
+       "new": 145636718.0,
+       "pct": -0.65,
+       "share_pct": 0.45
+      },
+      {
+       "period": "2026-05-01",
+       "series": "Non Retail Sized",
+       "old": 62848052.0,
+       "new": 62431677.0,
+       "pct": -0.66,
+       "share_pct": 0.2
+      },
+      {
+       "period": "2026-04-01",
+       "series": "Retail Sized",
+       "old": 146267151.0,
+       "new": 145995806.0,
+       "pct": -0.19,
+       "share_pct": 0.13
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_volume_adjusted_vs_unadjusted.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 103,
+     "material": true,
+     "material_periods": 13,
+     "material_cells": 26,
+     "first_material": "2023-03-01",
+     "last_material": "2025-05-01",
+     "minor_cells": 156,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2023-06-01",
+       "series": "Unadjusted",
+       "old": 456459530598.1702,
+       "new": 424162999067.57947,
+       "pct": -7.08,
+       "share_pct": 4.17
+      },
+      {
+       "period": "2023-06-01",
+       "series": "Adjusted",
+       "old": 318915377812.4439,
+       "new": 351210527131.0704,
+       "pct": 10.13,
+       "share_pct": 4.17
+      },
+      {
+       "period": "2023-09-01",
+       "series": "Unadjusted",
+       "old": 353826045111.924,
+       "new": 332375899617.8745,
+       "pct": -6.06,
+       "share_pct": 3.5
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_volume_by_blockchain.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 103,
+     "material": true,
+     "material_periods": 33,
+     "material_cells": 33,
+     "first_material": "2023-01-01",
+     "last_material": "2025-11-01",
+     "minor_cells": 643,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2023-06-01",
+       "series": "ethereum",
+       "old": 126344487196.32489,
+       "new": 158647207362.02472,
+       "pct": 25.57,
+       "share_pct": 9.2
+      },
+      {
+       "period": "2025-04-01",
+       "series": "ethereum",
+       "old": 300752937907.4593,
+       "new": 364373532247.9026,
+       "pct": 21.15,
+       "share_pct": 8.09
+      },
+      {
+       "period": "2023-09-01",
+       "series": "ethereum",
+       "old": 89963065268.99796,
+       "new": 111422669743.47003,
+       "pct": 23.85,
+       "share_pct": 7.67
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_volume_by_stablecoin.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 103,
+     "material": true,
+     "material_periods": 27,
+     "material_cells": 35,
+     "first_material": "2023-03-01",
+     "last_material": "2025-09-01",
+     "minor_cells": 409,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2023-06-01",
+       "series": "USDC",
+       "old": 89982600444.24536,
+       "new": 117697605350.32074,
+       "pct": 30.8,
+       "share_pct": 7.89
+      },
+      {
+       "period": "2023-09-01",
+       "series": "USDC",
+       "old": 60833194123.78556,
+       "new": 79881496070.5061,
+       "pct": 31.31,
+       "share_pct": 6.81
+      },
+      {
+       "period": "2025-04-01",
+       "series": "USDC",
+       "old": 295853633367.0173,
+       "new": 348871689655.4176,
+       "pct": 17.92,
+       "share_pct": 6.75
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_volume_retail_sized_vs_other_adjusted.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-06-01",
+     "compared": 103,
+     "material": true,
+     "material_periods": 33,
+     "material_cells": 33,
+     "first_material": "2023-01-01",
+     "last_material": "2025-11-01",
+     "minor_cells": 158,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2023-06-01",
+       "series": "Non Retail Sized",
+       "old": 316615018250.29193,
+       "new": 348910095244.93475,
+       "pct": 10.2,
+       "share_pct": 9.2
+      },
+      {
+       "period": "2025-04-01",
+       "series": "Non Retail Sized",
+       "old": 718327350576.1826,
+       "new": 781778002982.4686,
+       "pct": 8.83,
+       "share_pct": 8.07
+      },
+      {
+       "period": "2023-09-01",
+       "series": "Non Retail Sized",
+       "old": 256287355233.57333,
+       "new": 277734401320.45044,
+       "pct": 8.37,
+       "share_pct": 7.66
+      }
+     ]
+    },
+    "transactions__transaction_size_by_blockchain.csv": {
+     "kind": "categorical",
+     "cutoff": null,
+     "compared": 20,
+     "material": true,
+     "material_periods": 17,
+     "material_cells": 21,
+     "first_material": "arbitrum",
+     "last_material": "worldchain",
+     "minor_cells": 112,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "celo",
+       "series": "a. < $100",
+       "old": 2475066964.0,
+       "new": 2706533765.0,
+       "pct": 9.35,
+       "share_pct": 8.5
+      },
+      {
+       "period": "plasma",
+       "series": "a. < $100",
+       "old": 17399633.0,
+       "new": 19711751.0,
+       "pct": 13.29,
+       "share_pct": 7.69
+      },
+      {
+       "period": "stable",
+       "series": "a. < $100",
+       "old": 158451.0,
+       "new": 171958.0,
+       "pct": 8.52,
+       "share_pct": 6.29
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "2026-08-07",
+   "pulled_at": "2026-08-07",
+   "trigger": "backfill",
+   "note": "reconstructed from git history (this repo @ 80aab12); pull date = commit date, exact pull time unknown",
+   "prev": "2026-07-08",
+   "charts": 29,
+   "hash": "fae536e3b7dfc5069645d143533c6449a438e58729e0a6f48eaa7aaa4e931223",
+   "files": [
+    "addresses__average_monthly_active_unique_stablecoin_wallet_addresses_by_blockchai.csv",
+    "addresses__average_monthly_active_unique_stablecoin_wallet_addresses_by_stablecoi.csv",
+    "home__average_stablecoin_supply_all_stablecoins.csv",
+    "insights__average_maus_on_pyusd.csv",
+    "insights__average_pyusd_supply.csv",
+    "insights__stablecoin_transaction_count_adjusted.csv",
+    "insights__stablecoin_transaction_count_by_blockchain.csv",
+    "insights__stablecoin_transaction_volume_adjusted.csv",
+    "insights__transaction_size_by_blockchain_august_2024.csv",
+    "insights__transaction_volume_usdc_on_base.csv",
+    "lending__loan_volume_by_blockchain.csv",
+    "lending__loan_volume_by_protocol.csv",
+    "lending__loan_volume_by_stablecoin.csv",
+    "lending__outstanding_loans_by_asset.csv",
+    "lending__outstanding_loans_by_chain.csv",
+    "lending__outstanding_loans_by_protocol.csv",
+    "supply__average_stablecoin_supply_by_blockchain.csv",
+    "supply__average_stablecoin_supply_by_stablecoin.csv",
+    "transactions__daily_transaction_count_weekdays_vs_weekends.csv",
+    "transactions__daily_transaction_volume_weekdays_vs_weekends.csv",
+    "transactions__stablecoin_transaction_count_adjusted_vs_unadjusted.csv",
+    "transactions__stablecoin_transaction_count_by_blockchain.csv",
+    "transactions__stablecoin_transaction_count_by_stablecoin.csv",
+    "transactions__stablecoin_transaction_count_retail_sized_vs_other_adjusted.csv",
+    "transactions__stablecoin_transaction_volume_adjusted_vs_unadjusted.csv",
+    "transactions__stablecoin_transaction_volume_by_blockchain.csv",
+    "transactions__stablecoin_transaction_volume_by_stablecoin.csv",
+    "transactions__stablecoin_transaction_volume_retail_sized_vs_other_adjusted.csv",
+    "transactions__transaction_size_by_blockchain.csv"
+   ],
+   "checks": "passed",
+   "new_charts": [],
+   "revised": {
+    "home__average_stablecoin_supply_all_stablecoins.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-07-01",
+     "compared": 90,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 90,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2019-02-01",
+       "series": "supply",
+       "old": 441837603.306517,
+       "new": 442191525.256889,
+       "pct": 0.08,
+       "share_pct": 0.08
+      },
+      {
+       "period": "2019-03-01",
+       "series": "supply",
+       "old": 460153931.306517,
+       "new": 460507853.256889,
+       "pct": 0.08,
+       "share_pct": 0.08
+      },
+      {
+       "period": "2019-01-01",
+       "series": "supply",
+       "old": 530843718.186517,
+       "new": 531197640.136889,
+       "pct": 0.07,
+       "share_pct": 0.07
+      }
+     ]
+    },
+    "insights__stablecoin_transaction_count_adjusted.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-07-01",
+     "compared": 82,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 200,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2024-06-01",
+       "series": "Other Categorized",
+       "old": 1434862.0,
+       "new": 1896671.0,
+       "pct": 32.18,
+       "share_pct": 0.46
+      },
+      {
+       "period": "2024-07-01",
+       "series": "Other Categorized",
+       "old": 1888461.0,
+       "new": 2355886.0,
+       "pct": 24.75,
+       "share_pct": 0.44
+      },
+      {
+       "period": "2024-04-01",
+       "series": "Other Categorized",
+       "old": 1900291.0,
+       "new": 2358292.0,
+       "pct": 24.1,
+       "share_pct": 0.44
+      }
+     ]
+    },
+    "insights__stablecoin_transaction_volume_adjusted.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-07-01",
+     "compared": 82,
+     "material": true,
+     "material_periods": 15,
+     "material_cells": 16,
+     "first_material": "2023-01-01",
+     "last_material": "2024-08-01",
+     "minor_cells": 226,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2023-06-01",
+       "series": "Other Categorized",
+       "old": 50524490043.95274,
+       "new": 18067462313.161007,
+       "pct": -64.24,
+       "share_pct": 9.24
+      },
+      {
+       "period": "2023-09-01",
+       "series": "Other Categorized",
+       "old": 30765018407.552094,
+       "new": 10230192401.89495,
+       "pct": -66.75,
+       "share_pct": 7.34
+      },
+      {
+       "period": "2023-08-01",
+       "series": "Other Categorized",
+       "old": 35354047891.50154,
+       "new": 13175297683.006065,
+       "pct": -62.73,
+       "share_pct": 7.04
+      }
+     ]
+    },
+    "insights__transaction_size_by_blockchain_august_2024.csv": {
+     "kind": "categorical",
+     "cutoff": null,
+     "compared": 4,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 8,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "base",
+       "series": "a. < $100",
+       "old": 9048390.0,
+       "new": 9048343.0,
+       "pct": -0.0,
+       "share_pct": 0.0
+      },
+      {
+       "period": "base",
+       "series": "b. $100 - $1k",
+       "old": 3060321.0,
+       "new": 3060353.0,
+       "pct": 0.0,
+       "share_pct": 0.0
+      },
+      {
+       "period": "base",
+       "series": "c. $1k - $10k",
+       "old": 1353255.0,
+       "new": 1353266.0,
+       "pct": 0.0,
+       "share_pct": 0.0
+      }
+     ]
+    },
+    "lending__loan_volume_by_blockchain.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-07-01",
+     "compared": 86,
+     "material": true,
+     "material_periods": 4,
+     "material_cells": 4,
+     "first_material": "2025-03-01",
+     "last_material": "2025-08-01",
+     "minor_cells": 55,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [
+      "unichain"
+     ],
+     "largest": [
+      {
+       "period": "2025-06-01",
+       "series": "unichain",
+       "old": 0.0,
+       "new": 372114274.28893,
+       "pct": null,
+       "share_pct": 2.65
+      },
+      {
+       "period": "2025-07-01",
+       "series": "unichain",
+       "old": 0.0,
+       "new": 548112303.64407,
+       "pct": null,
+       "share_pct": 2.1
+      },
+      {
+       "period": "2025-08-01",
+       "series": "unichain",
+       "old": 0.0,
+       "new": 691432982.999177,
+       "pct": null,
+       "share_pct": 2.09
+      }
+     ]
+    },
+    "lending__loan_volume_by_protocol.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-07-01",
+     "compared": 86,
+     "material": true,
+     "material_periods": 27,
+     "material_cells": 58,
+     "first_material": "2024-02-01",
+     "last_material": "2026-06-01",
+     "minor_cells": 189,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [
+      "morpho_blue"
+     ],
+     "series_added": [
+      "morpho"
+     ],
+     "largest": [
+      {
+       "period": "2026-06-01",
+       "series": "morpho",
+       "old": 0.0,
+       "new": 1732650751.523652,
+       "pct": null,
+       "share_pct": 17.08
+      },
+      {
+       "period": "2026-06-01",
+       "series": "morpho_blue",
+       "old": 1732569065.042688,
+       "new": 0.0,
+       "pct": -100.0,
+       "share_pct": 17.08
+      },
+      {
+       "period": "2026-03-01",
+       "series": "morpho",
+       "old": 0.0,
+       "new": 2810334429.138329,
+       "pct": null,
+       "share_pct": 14.6
+      }
+     ]
+    },
+    "lending__loan_volume_by_stablecoin.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-07-01",
+     "compared": 86,
+     "material": true,
+     "material_periods": 4,
+     "material_cells": 5,
+     "first_material": "2025-03-01",
+     "last_material": "2025-08-01",
+     "minor_cells": 42,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2025-08-01",
+       "series": "USDC",
+       "old": 16512848443.899399,
+       "new": 17109766860.77532,
+       "pct": 3.61,
+       "share_pct": 1.8
+      },
+      {
+       "period": "2025-03-01",
+       "series": "USDC",
+       "old": 5856891068.560437,
+       "new": 6005062921.421942,
+       "pct": 2.53,
+       "share_pct": 1.68
+      },
+      {
+       "period": "2025-07-01",
+       "series": "USDC",
+       "old": 10918135664.46411,
+       "new": 11337375982.245031,
+       "pct": 3.84,
+       "share_pct": 1.61
+      }
+     ]
+    },
+    "supply__average_stablecoin_supply_by_blockchain.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-07-01",
+     "compared": 90,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 280,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2019-02-01",
+       "series": "ethereum",
+       "old": 441837603.306517,
+       "new": 442191525.256889,
+       "pct": 0.08,
+       "share_pct": 0.08
+      },
+      {
+       "period": "2019-03-01",
+       "series": "ethereum",
+       "old": 460153931.306517,
+       "new": 460507853.256889,
+       "pct": 0.08,
+       "share_pct": 0.08
+      },
+      {
+       "period": "2019-01-01",
+       "series": "ethereum",
+       "old": 530843718.186517,
+       "new": 531197640.136889,
+       "pct": 0.07,
+       "share_pct": 0.07
+      }
+     ]
+    },
+    "supply__average_stablecoin_supply_by_stablecoin.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-07-01",
+     "compared": 90,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 173,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2019-02-01",
+       "series": "EURS",
+       "old": 35318988.073088,
+       "new": 35672910.02346,
+       "pct": 1.0,
+       "share_pct": 0.08
+      },
+      {
+       "period": "2019-03-01",
+       "series": "EURS",
+       "old": 35318988.073088,
+       "new": 35672910.02346,
+       "pct": 1.0,
+       "share_pct": 0.08
+      },
+      {
+       "period": "2019-01-01",
+       "series": "EURS",
+       "old": 35318988.073088,
+       "new": 35672910.02346,
+       "pct": 1.0,
+       "share_pct": 0.07
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_count_adjusted_vs_unadjusted.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-07-01",
+     "compared": 104,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 145,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2025-08-01",
+       "series": "Unadjusted",
+       "old": 929338350.0,
+       "new": 925970547.0,
+       "pct": -0.36,
+       "share_pct": 0.3
+      },
+      {
+       "period": "2025-08-01",
+       "series": "Adjusted",
+       "old": 199173446.0,
+       "new": 202541249.0,
+       "pct": 1.69,
+       "share_pct": 0.3
+      },
+      {
+       "period": "2025-02-01",
+       "series": "Unadjusted",
+       "old": 414302340.0,
+       "new": 412796916.0,
+       "pct": -0.36,
+       "share_pct": 0.28
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_count_by_blockchain.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-07-01",
+     "compared": 104,
+     "material": true,
+     "material_periods": 11,
+     "material_cells": 11,
+     "first_material": "2025-02-01",
+     "last_material": "2026-06-01",
+     "minor_cells": 681,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2025-08-01",
+       "series": "arbitrum",
+       "old": 10394680.0,
+       "new": 13736419.0,
+       "pct": 32.15,
+       "share_pct": 1.65
+      },
+      {
+       "period": "2025-05-01",
+       "series": "arbitrum",
+       "old": 8759314.0,
+       "new": 11164830.0,
+       "pct": 27.46,
+       "share_pct": 1.24
+      },
+      {
+       "period": "2025-10-01",
+       "series": "arbitrum",
+       "old": 9655747.0,
+       "new": 12545630.0,
+       "pct": 29.93,
+       "share_pct": 1.23
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_count_by_stablecoin.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-07-01",
+     "compared": 104,
+     "material": true,
+     "material_periods": 7,
+     "material_cells": 7,
+     "first_material": "2025-03-01",
+     "last_material": "2026-02-01",
+     "minor_cells": 340,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2025-08-01",
+       "series": "USDC",
+       "old": 56295597.0,
+       "new": 59333909.0,
+       "pct": 5.4,
+       "share_pct": 1.5
+      },
+      {
+       "period": "2025-10-01",
+       "series": "USDC",
+       "old": 69050844.0,
+       "new": 71936036.0,
+       "pct": 4.18,
+       "share_pct": 1.23
+      },
+      {
+       "period": "2025-11-01",
+       "series": "USDC",
+       "old": 63779224.0,
+       "new": 66376702.0,
+       "pct": 4.07,
+       "share_pct": 1.19
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_count_retail_sized_vs_other_adjusted.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-07-01",
+     "compared": 104,
+     "material": true,
+     "material_periods": 3,
+     "material_cells": 3,
+     "first_material": "2025-03-01",
+     "last_material": "2026-02-01",
+     "minor_cells": 138,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2025-08-01",
+       "series": "Non Retail Sized",
+       "old": 79589003.0,
+       "new": 82125958.0,
+       "pct": 3.19,
+       "share_pct": 1.25
+      },
+      {
+       "period": "2026-02-01",
+       "series": "Non Retail Sized",
+       "old": 56518861.0,
+       "new": 58597906.0,
+       "pct": 3.68,
+       "share_pct": 1.05
+      },
+      {
+       "period": "2025-03-01",
+       "series": "Non Retail Sized",
+       "old": 50796759.0,
+       "new": 52199334.0,
+       "pct": 2.76,
+       "share_pct": 1.04
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_volume_adjusted_vs_unadjusted.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-07-01",
+     "compared": 104,
+     "material": true,
+     "material_periods": 11,
+     "material_cells": 22,
+     "first_material": "2023-03-01",
+     "last_material": "2025-04-01",
+     "minor_cells": 158,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2023-06-01",
+       "series": "Unadjusted",
+       "old": 424162999067.57947,
+       "new": 456625191516.4282,
+       "pct": 7.65,
+       "share_pct": 4.19
+      },
+      {
+       "period": "2023-06-01",
+       "series": "Adjusted",
+       "old": 351210527131.0704,
+       "new": 318749576697.9362,
+       "pct": -9.24,
+       "share_pct": 4.19
+      },
+      {
+       "period": "2023-09-01",
+       "series": "Unadjusted",
+       "old": 332375899617.8745,
+       "new": 352328304249.47876,
+       "pct": 6.0,
+       "share_pct": 3.26
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_volume_by_blockchain.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-07-01",
+     "compared": 104,
+     "material": true,
+     "material_periods": 25,
+     "material_cells": 25,
+     "first_material": "2023-01-01",
+     "last_material": "2025-09-01",
+     "minor_cells": 646,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2023-06-01",
+       "series": "ethereum",
+       "old": 158647207362.02472,
+       "new": 126255518335.35818,
+       "pct": -20.42,
+       "share_pct": 9.22
+      },
+      {
+       "period": "2023-09-01",
+       "series": "ethereum",
+       "old": 111422669743.47003,
+       "new": 91457532629.30798,
+       "pct": -17.92,
+       "share_pct": 7.14
+      },
+      {
+       "period": "2025-04-01",
+       "series": "ethereum",
+       "old": 364373532247.9026,
+       "new": 308329655371.6699,
+       "pct": -15.38,
+       "share_pct": 7.13
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_volume_by_stablecoin.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-07-01",
+     "compared": 104,
+     "material": true,
+     "material_periods": 20,
+     "material_cells": 22,
+     "first_material": "2023-03-01",
+     "last_material": "2025-07-01",
+     "minor_cells": 441,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2023-06-01",
+       "series": "USDC",
+       "old": 117697605350.32074,
+       "new": 89854906081.83646,
+       "pct": -23.66,
+       "share_pct": 7.93
+      },
+      {
+       "period": "2023-09-01",
+       "series": "USDC",
+       "old": 79881496070.5061,
+       "new": 62032868346.38726,
+       "pct": -22.34,
+       "share_pct": 6.38
+      },
+      {
+       "period": "2023-08-01",
+       "series": "USDC",
+       "old": 97644372482.0461,
+       "new": 78344271569.70494,
+       "pct": -19.77,
+       "share_pct": 6.12
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_volume_retail_sized_vs_other_adjusted.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-07-01",
+     "compared": 104,
+     "material": true,
+     "material_periods": 24,
+     "material_cells": 24,
+     "first_material": "2023-01-01",
+     "last_material": "2025-08-01",
+     "minor_cells": 153,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2023-06-01",
+       "series": "Non Retail Sized",
+       "old": 348910095244.93475,
+       "new": 316449368066.64154,
+       "pct": -9.3,
+       "share_pct": 9.24
+      },
+      {
+       "period": "2023-09-01",
+       "series": "Non Retail Sized",
+       "old": 277734401320.45044,
+       "new": 257784861141.99426,
+       "pct": -7.18,
+       "share_pct": 7.13
+      },
+      {
+       "period": "2023-08-01",
+       "series": "Non Retail Sized",
+       "old": 313036124091.55383,
+       "new": 290976675027.3161,
+       "pct": -7.05,
+       "share_pct": 7.0
+      }
+     ]
+    },
+    "transactions__transaction_size_by_blockchain.csv": {
+     "kind": "categorical",
+     "cutoff": null,
+     "compared": 20,
+     "material": true,
+     "material_periods": 15,
+     "material_cells": 19,
+     "first_material": "arbitrum",
+     "last_material": "worldchain",
+     "minor_cells": 114,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "stable",
+       "series": "a. < $100",
+       "old": 171958.0,
+       "new": 5118620.0,
+       "pct": 2876.67,
+       "share_pct": 87.4
+      },
+      {
+       "period": "celo",
+       "series": "a. < $100",
+       "old": 2706533765.0,
+       "new": 2943179142.0,
+       "pct": 8.74,
+       "share_pct": 7.99
+      },
+      {
+       "period": "stable",
+       "series": "b. $100 - $1k",
+       "old": 13495.0,
+       "new": 464109.0,
+       "pct": 3339.12,
+       "share_pct": 7.96
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "2026-09-11",
+   "pulled_at": "2026-09-11",
+   "trigger": "backfill",
+   "note": "reconstructed from git history (a private working copy of this pipeline); pull date = commit date, exact pull time unknown",
+   "prev": "2026-08-07",
+   "charts": 29,
+   "hash": "98c4341716e8c59e49f97bc81eaa8550122bc524412080a891bece24b9008584",
+   "files": [
+    "addresses__average_monthly_active_unique_stablecoin_wallet_addresses_by_blockchai.csv",
+    "addresses__average_monthly_active_unique_stablecoin_wallet_addresses_by_stablecoi.csv",
+    "home__average_stablecoin_supply_all_stablecoins.csv",
+    "insights__average_maus_on_pyusd.csv",
+    "insights__average_pyusd_supply.csv",
+    "insights__stablecoin_transaction_count_adjusted.csv",
+    "insights__stablecoin_transaction_count_by_blockchain.csv",
+    "insights__stablecoin_transaction_volume_adjusted.csv",
+    "insights__transaction_size_by_blockchain_august_2024.csv",
+    "insights__transaction_volume_usdc_on_base.csv",
+    "lending__loan_volume_by_blockchain.csv",
+    "lending__loan_volume_by_protocol.csv",
+    "lending__loan_volume_by_stablecoin.csv",
+    "lending__outstanding_loans_by_asset.csv",
+    "lending__outstanding_loans_by_chain.csv",
+    "lending__outstanding_loans_by_protocol.csv",
+    "supply__average_stablecoin_supply_by_blockchain.csv",
+    "supply__average_stablecoin_supply_by_stablecoin.csv",
+    "transactions__daily_transaction_count_weekdays_vs_weekends.csv",
+    "transactions__daily_transaction_volume_weekdays_vs_weekends.csv",
+    "transactions__stablecoin_transaction_count_adjusted_vs_unadjusted.csv",
+    "transactions__stablecoin_transaction_count_by_blockchain.csv",
+    "transactions__stablecoin_transaction_count_by_stablecoin.csv",
+    "transactions__stablecoin_transaction_count_retail_sized_vs_other_adjusted.csv",
+    "transactions__stablecoin_transaction_volume_adjusted_vs_unadjusted.csv",
+    "transactions__stablecoin_transaction_volume_by_blockchain.csv",
+    "transactions__stablecoin_transaction_volume_by_stablecoin.csv",
+    "transactions__stablecoin_transaction_volume_retail_sized_vs_other_adjusted.csv",
+    "transactions__transaction_size_by_blockchain.csv"
+   ],
+   "checks": "passed",
+   "new_charts": [],
+   "revised": {
+    "home__average_stablecoin_supply_all_stablecoins.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-08-01",
+     "compared": 91,
+     "material": true,
+     "material_periods": 4,
+     "material_cells": 4,
+     "first_material": "2026-04-01",
+     "last_material": "2026-07-01",
+     "minor_cells": 87,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2026-07-01",
+       "series": "supply",
+       "old": 263201483629.77255,
+       "new": 271007812940.19565,
+       "pct": 2.97,
+       "share_pct": 2.88
+      },
+      {
+       "period": "2026-06-01",
+       "series": "supply",
+       "old": 269079026791.1872,
+       "new": 276374822840.2485,
+       "pct": 2.71,
+       "share_pct": 2.64
+      },
+      {
+       "period": "2026-05-01",
+       "series": "supply",
+       "old": 275786069529.1947,
+       "new": 280267242008.6246,
+       "pct": 1.62,
+       "share_pct": 1.6
+      }
+     ]
+    },
+    "insights__stablecoin_transaction_count_adjusted.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-08-01",
+     "compared": 82,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 181,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2024-06-01",
+       "series": "Other Categorized",
+       "old": 1896671.0,
+       "new": 1399766.0,
+       "pct": -26.2,
+       "share_pct": 0.49
+      },
+      {
+       "period": "2024-04-01",
+       "series": "Other Categorized",
+       "old": 2358292.0,
+       "new": 1844294.0,
+       "pct": -21.8,
+       "share_pct": 0.49
+      },
+      {
+       "period": "2024-07-01",
+       "series": "Other Categorized",
+       "old": 2355886.0,
+       "new": 1843686.0,
+       "pct": -21.74,
+       "share_pct": 0.49
+      }
+     ]
+    },
+    "insights__stablecoin_transaction_volume_adjusted.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-08-01",
+     "compared": 82,
+     "material": true,
+     "material_periods": 13,
+     "material_cells": 32,
+     "first_material": "2023-05-01",
+     "last_material": "2024-08-01",
+     "minor_cells": 195,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2024-05-01",
+       "series": "Decentralized Exchange",
+       "old": 61757468930.014496,
+       "new": 46214072561.64653,
+       "pct": -25.17,
+       "share_pct": 3.47
+      },
+      {
+       "period": "2024-01-01",
+       "series": "Decentralized Exchange",
+       "old": 47369613757.118126,
+       "new": 35860066015.50174,
+       "pct": -24.3,
+       "share_pct": 2.88
+      },
+      {
+       "period": "2024-05-01",
+       "series": "Other Categorized",
+       "old": 33474945555.87249,
+       "new": 21538110611.28173,
+       "pct": -35.66,
+       "share_pct": 2.66
+      }
+     ]
+    },
+    "insights__transaction_size_by_blockchain_august_2024.csv": {
+     "kind": "categorical",
+     "cutoff": null,
+     "compared": 4,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 6,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "base",
+       "series": "a. < $100",
+       "old": 9048343.0,
+       "new": 9048300.0,
+       "pct": -0.0,
+       "share_pct": 0.0
+      },
+      {
+       "period": "base",
+       "series": "b. $100 - $1k",
+       "old": 3060353.0,
+       "new": 3060387.0,
+       "pct": 0.0,
+       "share_pct": 0.0
+      },
+      {
+       "period": "ethereum",
+       "series": "b. $100 - $1k",
+       "old": 2469887.0,
+       "new": 2469882.0,
+       "pct": -0.0,
+       "share_pct": 0.0
+      }
+     ]
+    },
+    "lending__loan_volume_by_blockchain.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-08-01",
+     "compared": 87,
+     "material": true,
+     "material_periods": 5,
+     "material_cells": 5,
+     "first_material": "2026-01-01",
+     "last_material": "2026-07-01",
+     "minor_cells": 121,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [
+      "plume",
+      "megaeth"
+     ],
+     "largest": [
+      {
+       "period": "2026-07-01",
+       "series": "solana",
+       "old": 2786070537.823543,
+       "new": 5236254727.691557,
+       "pct": 87.94,
+       "share_pct": 17.83
+      },
+      {
+       "period": "2026-05-01",
+       "series": "solana",
+       "old": 1218894362.744602,
+       "new": 2214516431.387737,
+       "pct": 81.68,
+       "share_pct": 8.07
+      },
+      {
+       "period": "2026-04-01",
+       "series": "solana",
+       "old": 2480627188.511773,
+       "new": 2952215420.101817,
+       "pct": 19.01,
+       "share_pct": 2.55
+      }
+     ]
+    },
+    "lending__loan_volume_by_protocol.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-08-01",
+     "compared": 87,
+     "material": true,
+     "material_periods": 5,
+     "material_cells": 7,
+     "first_material": "2026-01-01",
+     "last_material": "2026-07-01",
+     "minor_cells": 360,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [
+      "tydro",
+      "save"
+     ],
+     "largest": [
+      {
+       "period": "2026-07-01",
+       "series": "jupiter",
+       "old": 2505680945.484694,
+       "new": 4956081381.079006,
+       "pct": 97.79,
+       "share_pct": 17.83
+      },
+      {
+       "period": "2026-05-01",
+       "series": "jupiter",
+       "old": 716867744.388422,
+       "new": 1712388623.995458,
+       "pct": 138.87,
+       "share_pct": 8.07
+      },
+      {
+       "period": "2026-04-01",
+       "series": "jupiter",
+       "old": 1979613090.866672,
+       "new": 2451045283.019996,
+       "pct": 23.81,
+       "share_pct": 2.55
+      }
+     ]
+    },
+    "lending__loan_volume_by_stablecoin.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-08-01",
+     "compared": 87,
+     "material": true,
+     "material_periods": 5,
+     "material_cells": 6,
+     "first_material": "2026-01-01",
+     "last_material": "2026-07-01",
+     "minor_cells": 161,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2026-07-01",
+       "series": "USDC",
+       "old": 7001460850.668532,
+       "new": 9415563798.305597,
+       "pct": 34.48,
+       "share_pct": 17.56
+      },
+      {
+       "period": "2026-05-01",
+       "series": "USDC",
+       "old": 5002269077.470932,
+       "new": 5531797907.24744,
+       "pct": 10.59,
+       "share_pct": 4.29
+      },
+      {
+       "period": "2026-05-01",
+       "series": "USDG",
+       "old": 394300970.829895,
+       "new": 858328286.906234,
+       "pct": 117.68,
+       "share_pct": 3.76
+      }
+     ]
+    },
+    "supply__average_stablecoin_supply_by_blockchain.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-08-01",
+     "compared": 91,
+     "material": true,
+     "material_periods": 3,
+     "material_cells": 3,
+     "first_material": "2026-05-01",
+     "last_material": "2026-07-01",
+     "minor_cells": 340,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [
+      "worldchain"
+     ],
+     "series_added": [
+      "x_layer",
+      "monad"
+     ],
+     "largest": [
+      {
+       "period": "2026-07-01",
+       "series": "hyperevm",
+       "old": 10511369.46,
+       "new": 5671496315.23632,
+       "pct": 53855.83,
+       "share_pct": 2.09
+      },
+      {
+       "period": "2026-06-01",
+       "series": "hyperevm",
+       "old": 22623156.28,
+       "new": 5389341585.038118,
+       "pct": 23722.24,
+       "share_pct": 1.94
+      },
+      {
+       "period": "2026-05-01",
+       "series": "hyperevm",
+       "old": 61334006.29,
+       "new": 2957601521.149841,
+       "pct": 4722.12,
+       "share_pct": 1.03
+      }
+     ]
+    },
+    "supply__average_stablecoin_supply_by_stablecoin.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-08-01",
+     "compared": 91,
+     "material": true,
+     "material_periods": 3,
+     "material_cells": 3,
+     "first_material": "2026-05-01",
+     "last_material": "2026-07-01",
+     "minor_cells": 210,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2026-07-01",
+       "series": "USDC",
+       "old": 66090114742.37339,
+       "new": 71982341415.73187,
+       "pct": 8.92,
+       "share_pct": 2.17
+      },
+      {
+       "period": "2026-06-01",
+       "series": "USDC",
+       "old": 67507456536.18067,
+       "new": 73074403506.8868,
+       "pct": 8.25,
+       "share_pct": 2.01
+      },
+      {
+       "period": "2026-05-01",
+       "series": "USDC",
+       "old": 72940630076.84741,
+       "new": 76050127719.26352,
+       "pct": 4.26,
+       "share_pct": 1.11
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_count_adjusted_vs_unadjusted.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-08-01",
+     "compared": 79,
+     "material": true,
+     "material_periods": 79,
+     "material_cells": 155,
+     "first_material": "2020-01-01",
+     "last_material": "2026-07-01",
+     "minor_cells": 3,
+     "removed_periods": [
+      "2017-11-01",
+      "2017-12-01",
+      "2018-01-01",
+      "2018-02-01",
+      "2018-03-01",
+      "2018-04-01",
+      "2018-05-01",
+      "2018-06-01",
+      "2018-07-01",
+      "2018-08-01",
+      "2018-09-01",
+      "2018-10-01",
+      "2018-11-01",
+      "2018-12-01",
+      "2019-01-01",
+      "2019-02-01",
+      "2019-03-01",
+      "2019-04-01",
+      "2019-05-01",
+      "2019-06-01",
+      "2019-07-01",
+      "2019-08-01",
+      "2019-09-01",
+      "2019-10-01",
+      "2019-11-01",
+      "2019-12-01"
+     ],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2020-09-01",
+       "series": "Adjusted",
+       "old": 9112562.0,
+       "new": 2556865.0,
+       "pct": -71.94,
+       "share_pct": 52.46
+      },
+      {
+       "period": "2020-09-01",
+       "series": "Unadjusted",
+       "old": 3384238.0,
+       "new": 9939878.0,
+       "pct": 193.71,
+       "share_pct": 52.46
+      },
+      {
+       "period": "2020-08-01",
+       "series": "Adjusted",
+       "old": 7786390.0,
+       "new": 2072143.0,
+       "pct": -73.39,
+       "share_pct": 51.48
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_count_by_blockchain.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-08-01",
+     "compared": 79,
+     "material": true,
+     "material_periods": 79,
+     "material_cells": 489,
+     "first_material": "2020-01-01",
+     "last_material": "2026-07-01",
+     "minor_cells": 384,
+     "removed_periods": [
+      "2017-11-01",
+      "2017-12-01",
+      "2018-01-01",
+      "2018-02-01",
+      "2018-03-01",
+      "2018-04-01",
+      "2018-05-01",
+      "2018-06-01",
+      "2018-07-01",
+      "2018-08-01",
+      "2018-09-01",
+      "2018-10-01",
+      "2018-11-01",
+      "2018-12-01",
+      "2019-01-01",
+      "2019-02-01",
+      "2019-03-01",
+      "2019-04-01",
+      "2019-05-01",
+      "2019-06-01",
+      "2019-07-01",
+      "2019-08-01",
+      "2019-09-01",
+      "2019-10-01",
+      "2019-11-01",
+      "2019-12-01"
+     ],
+     "added_history": [],
+     "series_removed": [
+      "stellar",
+      "aptos",
+      "sui"
+     ],
+     "series_added": [
+      "monad"
+     ],
+     "largest": [
+      {
+       "period": "2020-02-01",
+       "series": "ethereum",
+       "old": 2347293.0,
+       "new": 722861.0,
+       "pct": -69.2,
+       "share_pct": 64.57
+      },
+      {
+       "period": "2020-01-01",
+       "series": "ethereum",
+       "old": 1716325.0,
+       "new": 577628.0,
+       "pct": -66.35,
+       "share_pct": 62.23
+      },
+      {
+       "period": "2020-03-01",
+       "series": "ethereum",
+       "old": 3188320.0,
+       "new": 1083816.0,
+       "pct": -66.01,
+       "share_pct": 61.09
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_count_by_stablecoin.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-08-01",
+     "compared": 79,
+     "material": true,
+     "material_periods": 79,
+     "material_cells": 162,
+     "first_material": "2020-01-01",
+     "last_material": "2026-07-01",
+     "minor_cells": 405,
+     "removed_periods": [
+      "2017-11-01",
+      "2017-12-01",
+      "2018-01-01",
+      "2018-02-01",
+      "2018-03-01",
+      "2018-04-01",
+      "2018-05-01",
+      "2018-06-01",
+      "2018-07-01",
+      "2018-08-01",
+      "2018-09-01",
+      "2018-10-01",
+      "2018-11-01",
+      "2018-12-01",
+      "2019-01-01",
+      "2019-02-01",
+      "2019-03-01",
+      "2019-04-01",
+      "2019-05-01",
+      "2019-06-01",
+      "2019-07-01",
+      "2019-08-01",
+      "2019-09-01",
+      "2019-10-01",
+      "2019-11-01",
+      "2019-12-01"
+     ],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2021-05-01",
+       "series": "USDT",
+       "old": 28836304.0,
+       "new": 4542873.0,
+       "pct": -84.25,
+       "share_pct": 73.55
+      },
+      {
+       "period": "2021-04-01",
+       "series": "USDT",
+       "old": 21468074.0,
+       "new": 4475125.0,
+       "pct": -79.15,
+       "share_pct": 69.37
+      },
+      {
+       "period": "2021-03-01",
+       "series": "USDT",
+       "old": 17098814.0,
+       "new": 4321385.0,
+       "pct": -74.73,
+       "share_pct": 68.27
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_count_retail_sized_vs_other_adjusted.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-08-01",
+     "compared": 105,
+     "material": true,
+     "material_periods": 5,
+     "material_cells": 5,
+     "first_material": "2025-03-01",
+     "last_material": "2026-07-01",
+     "minor_cells": 154,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2026-06-01",
+       "series": "Retail Sized",
+       "old": 137228037.0,
+       "new": 141447353.0,
+       "pct": 3.07,
+       "share_pct": 2.01
+      },
+      {
+       "period": "2026-07-01",
+       "series": "Retail Sized",
+       "old": 143521453.0,
+       "new": 147015827.0,
+       "pct": 2.43,
+       "share_pct": 1.62
+      },
+      {
+       "period": "2026-05-01",
+       "series": "Retail Sized",
+       "old": 145902093.0,
+       "new": 149041348.0,
+       "pct": 2.15,
+       "share_pct": 1.48
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_volume_adjusted_vs_unadjusted.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-08-01",
+     "compared": 79,
+     "material": true,
+     "material_periods": 79,
+     "material_cells": 156,
+     "first_material": "2020-01-01",
+     "last_material": "2026-07-01",
+     "minor_cells": 2,
+     "removed_periods": [
+      "2017-11-01",
+      "2017-12-01",
+      "2018-01-01",
+      "2018-02-01",
+      "2018-03-01",
+      "2018-04-01",
+      "2018-05-01",
+      "2018-06-01",
+      "2018-07-01",
+      "2018-08-01",
+      "2018-09-01",
+      "2018-10-01",
+      "2018-11-01",
+      "2018-12-01",
+      "2019-01-01",
+      "2019-02-01",
+      "2019-03-01",
+      "2019-04-01",
+      "2019-05-01",
+      "2019-06-01",
+      "2019-07-01",
+      "2019-08-01",
+      "2019-09-01",
+      "2019-10-01",
+      "2019-11-01",
+      "2019-12-01"
+     ],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2026-05-01",
+       "series": "Unadjusted",
+       "old": 22736090166554.707,
+       "new": 5014480819787.885,
+       "pct": -77.94,
+       "share_pct": 74.35
+      },
+      {
+       "period": "2020-02-01",
+       "series": "Adjusted",
+       "old": 18136341289.916145,
+       "new": 2625379354.488948,
+       "pct": -85.52,
+       "share_pct": 49.27
+      },
+      {
+       "period": "2020-02-01",
+       "series": "Unadjusted",
+       "old": 13343687518.624409,
+       "new": 28826196223.148056,
+       "pct": 116.03,
+       "share_pct": 49.18
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_volume_by_blockchain.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-08-01",
+     "compared": 79,
+     "material": true,
+     "material_periods": 79,
+     "material_cells": 401,
+     "first_material": "2020-01-01",
+     "last_material": "2026-07-01",
+     "minor_cells": 472,
+     "removed_periods": [
+      "2017-11-01",
+      "2017-12-01",
+      "2018-01-01",
+      "2018-02-01",
+      "2018-03-01",
+      "2018-04-01",
+      "2018-05-01",
+      "2018-06-01",
+      "2018-07-01",
+      "2018-08-01",
+      "2018-09-01",
+      "2018-10-01",
+      "2018-11-01",
+      "2018-12-01",
+      "2019-01-01",
+      "2019-02-01",
+      "2019-03-01",
+      "2019-04-01",
+      "2019-05-01",
+      "2019-06-01",
+      "2019-07-01",
+      "2019-08-01",
+      "2019-09-01",
+      "2019-10-01",
+      "2019-11-01",
+      "2019-12-01"
+     ],
+     "added_history": [],
+     "series_removed": [
+      "aptos",
+      "sui",
+      "stellar"
+     ],
+     "series_added": [
+      "monad"
+     ],
+     "largest": [
+      {
+       "period": "2020-03-01",
+       "series": "ethereum",
+       "old": 23362920323.92654,
+       "new": 3976280267.328394,
+       "pct": -82.98,
+       "share_pct": 72.36
+      },
+      {
+       "period": "2020-01-01",
+       "series": "ethereum",
+       "old": 12969032062.681576,
+       "new": 2375043098.334566,
+       "pct": -81.69,
+       "share_pct": 71.91
+      },
+      {
+       "period": "2020-02-01",
+       "series": "ethereum",
+       "old": 15272470891.685028,
+       "new": 2577077282.142864,
+       "pct": -83.13,
+       "share_pct": 70.0
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_volume_by_stablecoin.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-08-01",
+     "compared": 79,
+     "material": true,
+     "material_periods": 79,
+     "material_cells": 170,
+     "first_material": "2020-01-01",
+     "last_material": "2026-07-01",
+     "minor_cells": 397,
+     "removed_periods": [
+      "2017-11-01",
+      "2017-12-01",
+      "2018-01-01",
+      "2018-02-01",
+      "2018-03-01",
+      "2018-04-01",
+      "2018-05-01",
+      "2018-06-01",
+      "2018-07-01",
+      "2018-08-01",
+      "2018-09-01",
+      "2018-10-01",
+      "2018-11-01",
+      "2018-12-01",
+      "2019-01-01",
+      "2019-02-01",
+      "2019-03-01",
+      "2019-04-01",
+      "2019-05-01",
+      "2019-06-01",
+      "2019-07-01",
+      "2019-08-01",
+      "2019-09-01",
+      "2019-10-01",
+      "2019-11-01",
+      "2019-12-01"
+     ],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2020-02-01",
+       "series": "USDT",
+       "old": 15919894642.948149,
+       "new": 2303780410.538003,
+       "pct": -85.53,
+       "share_pct": 75.08
+      },
+      {
+       "period": "2020-05-01",
+       "series": "USDT",
+       "old": 27708111828.664703,
+       "new": 6142069877.526415,
+       "pct": -77.83,
+       "share_pct": 70.34
+      },
+      {
+       "period": "2020-08-01",
+       "series": "USDT",
+       "old": 55201129477.22881,
+       "new": 10560119455.23659,
+       "pct": -80.87,
+       "share_pct": 69.63
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_volume_retail_sized_vs_other_adjusted.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-08-01",
+     "compared": 105,
+     "material": true,
+     "material_periods": 21,
+     "material_cells": 21,
+     "first_material": "2023-10-01",
+     "last_material": "2025-08-01",
+     "minor_cells": 166,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2024-05-01",
+       "series": "Non Retail Sized",
+       "old": 444761494962.19867,
+       "new": 424461291570.94714,
+       "pct": -4.56,
+       "share_pct": 4.53
+      },
+      {
+       "period": "2024-01-01",
+       "series": "Non Retail Sized",
+       "old": 397282641720.58795,
+       "new": 381460307085.34644,
+       "pct": -3.98,
+       "share_pct": 3.96
+      },
+      {
+       "period": "2024-04-01",
+       "series": "Non Retail Sized",
+       "old": 508204876441.1935,
+       "new": 490635323595.3706,
+       "pct": -3.46,
+       "share_pct": 3.43
+      }
+     ]
+    },
+    "transactions__transaction_size_by_blockchain.csv": {
+     "kind": "categorical",
+     "cutoff": null,
+     "compared": 20,
+     "material": true,
+     "material_periods": 16,
+     "material_cells": 28,
+     "first_material": "arbitrum",
+     "last_material": "worldchain",
+     "minor_cells": 107,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "hyperevm",
+       "series": "a. < $100",
+       "old": 2294104.0,
+       "new": 45397308.0,
+       "pct": 1878.87,
+       "share_pct": 43.91
+      },
+      {
+       "period": "hyperevm",
+       "series": "b. $100 - $1k",
+       "old": 1583354.0,
+       "new": 34860852.0,
+       "pct": 2101.71,
+       "share_pct": 33.9
+      },
+      {
+       "period": "stable",
+       "series": "a. < $100",
+       "old": 5118620.0,
+       "new": 7383019.0,
+       "pct": 44.24,
+       "share_pct": 28.01
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "2026-09-22",
+   "pulled_at": "2026-09-22",
+   "trigger": "backfill",
+   "note": "reconstructed from git history (this repo @ 9596c51); pull date = commit date, exact pull time unknown",
+   "prev": "2026-09-11",
+   "charts": 31,
+   "hash": "5d3d3102cf4181d6b72df70c578306f315c830f9c5432f641d4f2a7d72ae7227",
+   "files": [
+    "addresses__average_monthly_active_unique_stablecoin_wallet_addresses_by_blockchai.csv",
+    "addresses__average_monthly_active_unique_stablecoin_wallet_addresses_by_stablecoi.csv",
+    "home__average_stablecoin_supply_all_stablecoins.csv",
+    "insights__average_maus_on_pyusd.csv",
+    "insights__average_pyusd_supply.csv",
+    "insights__stablecoin_transaction_count_adjusted.csv",
+    "insights__stablecoin_transaction_count_by_blockchain.csv",
+    "insights__stablecoin_transaction_volume_adjusted.csv",
+    "insights__transaction_size_by_blockchain_august_2024.csv",
+    "insights__transaction_volume_usdc_on_base.csv",
+    "lending__loan_volume_by_blockchain.csv",
+    "lending__loan_volume_by_protocol.csv",
+    "lending__loan_volume_by_stablecoin.csv",
+    "lending__outstanding_loans_by_asset.csv",
+    "lending__outstanding_loans_by_chain.csv",
+    "lending__outstanding_loans_by_protocol.csv",
+    "supply__average_stablecoin_supply_by_blockchain.csv",
+    "supply__average_stablecoin_supply_by_stablecoin.csv",
+    "transactions__daily_transaction_count_weekdays_vs_weekends.csv",
+    "transactions__daily_transaction_volume_weekdays_vs_weekends.csv",
+    "transactions__stablecoin_transaction_count_adjusted_by_category.csv",
+    "transactions__stablecoin_transaction_count_adjusted_vs_unadjusted.csv",
+    "transactions__stablecoin_transaction_count_by_blockchain.csv",
+    "transactions__stablecoin_transaction_count_by_stablecoin.csv",
+    "transactions__stablecoin_transaction_count_retail_sized_vs_other_adjusted.csv",
+    "transactions__stablecoin_transaction_volume_adjusted_by_category.csv",
+    "transactions__stablecoin_transaction_volume_adjusted_vs_unadjusted.csv",
+    "transactions__stablecoin_transaction_volume_by_blockchain.csv",
+    "transactions__stablecoin_transaction_volume_by_stablecoin.csv",
+    "transactions__stablecoin_transaction_volume_retail_sized_vs_other_adjusted.csv",
+    "transactions__transaction_size_by_blockchain.csv"
+   ],
+   "checks": "passed",
+   "new_charts": [
+    "transactions__stablecoin_transaction_count_adjusted_by_category.csv",
+    "transactions__stablecoin_transaction_volume_adjusted_by_category.csv"
+   ],
+   "revised": {
+    "home__average_stablecoin_supply_all_stablecoins.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-09-01",
+     "compared": 92,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 92,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2019-02-01",
+       "series": "supply",
+       "old": 442479823.953072,
+       "new": 442044135.483745,
+       "pct": -0.1,
+       "share_pct": 0.1
+      },
+      {
+       "period": "2019-03-01",
+       "series": "supply",
+       "old": 460796151.953072,
+       "new": 460360463.483745,
+       "pct": -0.09,
+       "share_pct": 0.09
+      },
+      {
+       "period": "2019-01-01",
+       "series": "supply",
+       "old": 531485938.833072,
+       "new": 531050250.363745,
+       "pct": -0.08,
+       "share_pct": 0.08
+      }
+     ]
+    },
+    "insights__stablecoin_transaction_count_adjusted.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-09-01",
+     "compared": 56,
+     "material": true,
+     "material_periods": 56,
+     "material_cells": 430,
+     "first_material": "2020-01-01",
+     "last_material": "2024-08-01",
+     "minor_cells": 354,
+     "removed_periods": [
+      "2017-11-01",
+      "2017-12-01",
+      "2018-01-01",
+      "2018-02-01",
+      "2018-03-01",
+      "2018-04-01",
+      "2018-05-01",
+      "2018-06-01",
+      "2018-07-01",
+      "2018-08-01",
+      "2018-09-01",
+      "2018-10-01",
+      "2018-11-01",
+      "2018-12-01",
+      "2019-01-01",
+      "2019-02-01",
+      "2019-03-01",
+      "2019-04-01",
+      "2019-05-01",
+      "2019-06-01",
+      "2019-07-01",
+      "2019-08-01",
+      "2019-09-01",
+      "2019-10-01",
+      "2019-11-01",
+      "2019-12-01"
+     ],
+     "added_history": [],
+     "series_removed": [
+      "Other (Adjusted)",
+      "Centralized Exchange",
+      "Decentralized Exchange",
+      "Other Categorized"
+     ],
+     "series_added": [
+      "infra_automation",
+      "defi",
+      "dust",
+      "cex_flow",
+      "payments",
+      "unclassified",
+      "short_term_pair",
+      "store_of_value",
+      "investment_trade",
+      "mint_burn"
+     ],
+     "largest": [
+      {
+       "period": "2020-02-01",
+       "series": "cex_flow",
+       "old": 0.0,
+       "new": 2038777.0,
+       "pct": null,
+       "share_pct": 59.18
+      },
+      {
+       "period": "2020-08-01",
+       "series": "cex_flow",
+       "old": 0.0,
+       "new": 6374931.0,
+       "pct": null,
+       "share_pct": 57.44
+      },
+      {
+       "period": "2020-07-01",
+       "series": "cex_flow",
+       "old": 0.0,
+       "new": 5038222.0,
+       "pct": null,
+       "share_pct": 56.66
+      }
+     ]
+    },
+    "insights__stablecoin_transaction_count_by_blockchain.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-09-01",
+     "compared": 56,
+     "material": true,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 30,
+     "removed_periods": [
+      "2017-11-01",
+      "2017-12-01",
+      "2018-01-01",
+      "2018-02-01",
+      "2018-03-01",
+      "2018-04-01",
+      "2018-05-01",
+      "2018-06-01",
+      "2018-07-01",
+      "2018-08-01",
+      "2018-09-01",
+      "2018-10-01",
+      "2018-11-01",
+      "2018-12-01",
+      "2019-01-01",
+      "2019-02-01",
+      "2019-03-01",
+      "2019-04-01",
+      "2019-05-01",
+      "2019-06-01",
+      "2019-07-01",
+      "2019-08-01",
+      "2019-09-01",
+      "2019-10-01",
+      "2019-11-01",
+      "2019-12-01"
+     ],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2020-03-01",
+       "series": "ethereum",
+       "old": 4219923.0,
+       "new": 4216127.0,
+       "pct": -0.09,
+       "share_pct": 0.09
+      },
+      {
+       "period": "2020-07-01",
+       "series": "ethereum",
+       "old": 7622866.0,
+       "new": 7621717.0,
+       "pct": -0.02,
+       "share_pct": 0.02
+      },
+      {
+       "period": "2020-06-01",
+       "series": "ethereum",
+       "old": 7666439.0,
+       "new": 7665843.0,
+       "pct": -0.01,
+       "share_pct": 0.01
+      }
+     ]
+    },
+    "insights__stablecoin_transaction_volume_adjusted.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-09-01",
+     "compared": 56,
+     "material": true,
+     "material_periods": 56,
+     "material_cells": 478,
+     "first_material": "2020-01-01",
+     "last_material": "2024-08-01",
+     "minor_cells": 306,
+     "removed_periods": [
+      "2017-11-01",
+      "2017-12-01",
+      "2018-01-01",
+      "2018-02-01",
+      "2018-03-01",
+      "2018-04-01",
+      "2018-05-01",
+      "2018-06-01",
+      "2018-07-01",
+      "2018-08-01",
+      "2018-09-01",
+      "2018-10-01",
+      "2018-11-01",
+      "2018-12-01",
+      "2019-01-01",
+      "2019-02-01",
+      "2019-03-01",
+      "2019-04-01",
+      "2019-05-01",
+      "2019-06-01",
+      "2019-07-01",
+      "2019-08-01",
+      "2019-09-01",
+      "2019-10-01",
+      "2019-11-01",
+      "2019-12-01"
+     ],
+     "added_history": [],
+     "series_removed": [
+      "Other (Adjusted)",
+      "Centralized Exchange",
+      "Decentralized Exchange",
+      "Other Categorized"
+     ],
+     "series_added": [
+      "infra_automation",
+      "cex_flow",
+      "defi",
+      "mint_burn",
+      "store_of_value",
+      "short_term_pair",
+      "investment_trade",
+      "payments",
+      "unclassified",
+      "dust"
+     ],
+     "largest": [
+      {
+       "period": "2022-01-01",
+       "series": "infra_automation",
+       "old": 0.0,
+       "new": 27284463924142.953,
+       "pct": null,
+       "share_pct": 97.79
+      },
+      {
+       "period": "2022-02-01",
+       "series": "infra_automation",
+       "old": 0.0,
+       "new": 21280931469174.547,
+       "pct": null,
+       "share_pct": 97.77
+      },
+      {
+       "period": "2022-03-01",
+       "series": "infra_automation",
+       "old": 0.0,
+       "new": 24022846928206.004,
+       "pct": null,
+       "share_pct": 97.58
+      }
+     ]
+    },
+    "insights__transaction_size_by_blockchain_august_2024.csv": {
+     "kind": "categorical",
+     "cutoff": null,
+     "compared": 4,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 7,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "base",
+       "series": "a. < $100",
+       "old": 9048300.0,
+       "new": 9048364.0,
+       "pct": 0.0,
+       "share_pct": 0.0
+      },
+      {
+       "period": "base",
+       "series": "b. $100 - $1k",
+       "old": 3060387.0,
+       "new": 3060338.0,
+       "pct": -0.0,
+       "share_pct": 0.0
+      },
+      {
+       "period": "ethereum",
+       "series": "b. $100 - $1k",
+       "old": 2469882.0,
+       "new": 2469889.0,
+       "pct": 0.0,
+       "share_pct": 0.0
+      }
+     ]
+    },
+    "insights__transaction_volume_usdc_on_base.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-09-01",
+     "compared": 13,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 13,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2023-08-01",
+       "series": "base",
+       "old": 633.48,
+       "new": 633.738067,
+       "pct": 0.04,
+       "share_pct": 0.04
+      },
+      {
+       "period": "2023-09-01",
+       "series": "base",
+       "old": 1510220907.948774,
+       "new": 1510718340.160248,
+       "pct": 0.03,
+       "share_pct": 0.03
+      },
+      {
+       "period": "2024-02-01",
+       "series": "base",
+       "old": 2058961452.666426,
+       "new": 2059297638.758286,
+       "pct": 0.02,
+       "share_pct": 0.02
+      }
+     ]
+    },
+    "lending__loan_volume_by_blockchain.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-09-01",
+     "compared": 88,
+     "material": true,
+     "material_periods": 2,
+     "material_cells": 2,
+     "first_material": "2026-07-01",
+     "last_material": "2026-08-01",
+     "minor_cells": 33,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2026-07-01",
+       "series": "monad",
+       "old": 77576191.606678,
+       "new": 392911130.459811,
+       "pct": 406.48,
+       "share_pct": 2.24
+      },
+      {
+       "period": "2026-08-01",
+       "series": "monad",
+       "old": 95412740.224888,
+       "new": 466002088.448002,
+       "pct": 388.41,
+       "share_pct": 1.92
+      },
+      {
+       "period": "2026-08-01",
+       "series": "x_layer",
+       "old": 0.0,
+       "new": 21431984.194592,
+       "pct": null,
+       "share_pct": 0.11
+      }
+     ]
+    },
+    "lending__loan_volume_by_protocol.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-09-01",
+     "compared": 88,
+     "material": true,
+     "material_periods": 2,
+     "material_cells": 2,
+     "first_material": "2026-07-01",
+     "last_material": "2026-08-01",
+     "minor_cells": 66,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [
+      "capyfi"
+     ],
+     "largest": [
+      {
+       "period": "2026-07-01",
+       "series": "aave",
+       "old": 3897620514.250016,
+       "new": 4222936793.829148,
+       "pct": 8.35,
+       "share_pct": 2.31
+      },
+      {
+       "period": "2026-08-01",
+       "series": "aave",
+       "old": 3394635920.664648,
+       "new": 3786657245.185324,
+       "pct": 11.55,
+       "share_pct": 2.03
+      },
+      {
+       "period": "2026-06-01",
+       "series": "aave",
+       "old": 3893325973.352665,
+       "new": 3899875637.867183,
+       "pct": 0.17,
+       "share_pct": 0.06
+      }
+     ]
+    },
+    "lending__loan_volume_by_stablecoin.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-09-01",
+     "compared": 88,
+     "material": true,
+     "material_periods": 2,
+     "material_cells": 3,
+     "first_material": "2026-07-01",
+     "last_material": "2026-08-01",
+     "minor_cells": 17,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2026-07-01",
+       "series": "USDT",
+       "old": 3653650055.228257,
+       "new": 3824550541.065883,
+       "pct": 4.68,
+       "share_pct": 1.21
+      },
+      {
+       "period": "2026-08-01",
+       "series": "USDC",
+       "old": 13647788784.641275,
+       "new": 13881518957.089428,
+       "pct": 1.71,
+       "share_pct": 1.21
+      },
+      {
+       "period": "2026-07-01",
+       "series": "USDC",
+       "old": 9415563798.305597,
+       "new": 9569221997.533121,
+       "pct": 1.63,
+       "share_pct": 1.09
+      }
+     ]
+    },
+    "supply__average_stablecoin_supply_by_blockchain.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-09-01",
+     "compared": 92,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 292,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2019-02-01",
+       "series": "ethereum",
+       "old": 442479823.953072,
+       "new": 442044135.483745,
+       "pct": -0.1,
+       "share_pct": 0.1
+      },
+      {
+       "period": "2019-03-01",
+       "series": "ethereum",
+       "old": 460796151.953072,
+       "new": 460360463.483745,
+       "pct": -0.09,
+       "share_pct": 0.09
+      },
+      {
+       "period": "2019-01-01",
+       "series": "ethereum",
+       "old": 531485938.833072,
+       "new": 531050250.363745,
+       "pct": -0.08,
+       "share_pct": 0.08
+      }
+     ]
+    },
+    "supply__average_stablecoin_supply_by_stablecoin.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-09-01",
+     "compared": 92,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 179,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2019-02-01",
+       "series": "EURS",
+       "old": 35961208.719643,
+       "new": 35525520.250316,
+       "pct": -1.21,
+       "share_pct": 0.1
+      },
+      {
+       "period": "2019-03-01",
+       "series": "EURS",
+       "old": 35961208.719643,
+       "new": 35525520.250316,
+       "pct": -1.21,
+       "share_pct": 0.09
+      },
+      {
+       "period": "2019-01-01",
+       "series": "EURS",
+       "old": 35961208.719643,
+       "new": 35525520.250316,
+       "pct": -1.21,
+       "share_pct": 0.08
+      }
+     ]
+    },
+    "transactions__daily_transaction_count_weekdays_vs_weekends.csv": {
+     "kind": "daily",
+     "cutoff": "2026-09-01",
+     "compared": 10,
+     "material": true,
+     "material_periods": 7,
+     "material_cells": 7,
+     "first_material": "2026-08-22",
+     "last_material": "2026-08-31",
+     "minor_cells": 3,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2026-08-22",
+       "series": "Weekend",
+       "old": 4877753.0,
+       "new": 5101792.0,
+       "pct": 4.59,
+       "share_pct": 4.39
+      },
+      {
+       "period": "2026-08-23",
+       "series": "Weekend",
+       "old": 4345254.0,
+       "new": 4503263.0,
+       "pct": 3.64,
+       "share_pct": 3.51
+      },
+      {
+       "period": "2026-08-25",
+       "series": "Weekday",
+       "old": 5423862.0,
+       "new": 5580633.0,
+       "pct": 2.89,
+       "share_pct": 2.81
+      }
+     ]
+    },
+    "transactions__daily_transaction_volume_weekdays_vs_weekends.csv": {
+     "kind": "daily",
+     "cutoff": "2026-09-01",
+     "compared": 10,
+     "material": true,
+     "material_periods": 10,
+     "material_cells": 10,
+     "first_material": "2026-08-22",
+     "last_material": "2026-08-31",
+     "minor_cells": 0,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2026-08-29",
+       "series": "Weekend",
+       "old": 8586484273.150955,
+       "new": 6086752552.671096,
+       "pct": -29.11,
+       "share_pct": 29.11
+      },
+      {
+       "period": "2026-08-30",
+       "series": "Weekend",
+       "old": 6436051184.762106,
+       "new": 5338430111.891963,
+       "pct": -17.05,
+       "share_pct": 17.05
+      },
+      {
+       "period": "2026-08-28",
+       "series": "Weekday",
+       "old": 12428442836.82175,
+       "new": 10493010806.329084,
+       "pct": -15.57,
+       "share_pct": 15.57
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_count_adjusted_vs_unadjusted.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-09-01",
+     "compared": 80,
+     "material": true,
+     "material_periods": 9,
+     "material_cells": 11,
+     "first_material": "2021-11-01",
+     "last_material": "2026-05-01",
+     "minor_cells": 149,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2022-04-01",
+       "series": "Unadjusted",
+       "old": 114374966.0,
+       "new": 117305383.0,
+       "pct": 2.56,
+       "share_pct": 2.19
+      },
+      {
+       "period": "2022-01-01",
+       "series": "Unadjusted",
+       "old": 108964629.0,
+       "new": 111142091.0,
+       "pct": 2.0,
+       "share_pct": 1.76
+      },
+      {
+       "period": "2022-02-01",
+       "series": "Unadjusted",
+       "old": 111950837.0,
+       "new": 114174983.0,
+       "pct": 1.99,
+       "share_pct": 1.75
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_count_by_blockchain.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-09-01",
+     "compared": 80,
+     "material": true,
+     "material_periods": 66,
+     "material_cells": 125,
+     "first_material": "2021-03-01",
+     "last_material": "2026-08-01",
+     "minor_cells": 154,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [
+      "stellar"
+     ],
+     "largest": [
+      {
+       "period": "2022-02-01",
+       "series": "stellar",
+       "old": 0.0,
+       "new": 1817499.0,
+       "pct": null,
+       "share_pct": 14.36
+      },
+      {
+       "period": "2022-01-01",
+       "series": "stellar",
+       "old": 0.0,
+       "new": 1726891.0,
+       "pct": null,
+       "share_pct": 13.47
+      },
+      {
+       "period": "2022-03-01",
+       "series": "stellar",
+       "old": 0.0,
+       "new": 1511051.0,
+       "pct": null,
+       "share_pct": 10.03
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_count_by_stablecoin.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-09-01",
+     "compared": 80,
+     "material": true,
+     "material_periods": 66,
+     "material_cells": 126,
+     "first_material": "2021-03-01",
+     "last_material": "2026-08-01",
+     "minor_cells": 154,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2022-02-01",
+       "series": "USDC",
+       "old": 1507763.0,
+       "new": 3322384.0,
+       "pct": 120.35,
+       "share_pct": 14.34
+      },
+      {
+       "period": "2022-01-01",
+       "series": "USDC",
+       "old": 1797568.0,
+       "new": 3519651.0,
+       "pct": 95.8,
+       "share_pct": 13.44
+      },
+      {
+       "period": "2022-03-01",
+       "series": "USDC",
+       "old": 1726532.0,
+       "new": 3225815.0,
+       "pct": 86.84,
+       "share_pct": 9.95
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_count_retail_sized_vs_other_adjusted.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-09-01",
+     "compared": 106,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 131,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2026-08-01",
+       "series": "Retail Sized",
+       "old": 160924071.0,
+       "new": 160075098.0,
+       "pct": -0.53,
+       "share_pct": 0.37
+      },
+      {
+       "period": "2026-06-01",
+       "series": "Retail Sized",
+       "old": 141447353.0,
+       "new": 140916401.0,
+       "pct": -0.38,
+       "share_pct": 0.25
+      },
+      {
+       "period": "2026-06-01",
+       "series": "Non Retail Sized",
+       "old": 68273891.0,
+       "new": 67860202.0,
+       "pct": -0.61,
+       "share_pct": 0.2
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_volume_adjusted_vs_unadjusted.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-09-01",
+     "compared": 80,
+     "material": true,
+     "material_periods": 17,
+     "material_cells": 34,
+     "first_material": "2023-02-01",
+     "last_material": "2026-07-01",
+     "minor_cells": 126,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2026-02-01",
+       "series": "Unadjusted",
+       "old": 7862629530801.486,
+       "new": 8435881097029.321,
+       "pct": 7.29,
+       "share_pct": 6.62
+      },
+      {
+       "period": "2026-02-01",
+       "series": "Adjusted",
+       "old": 791467011187.8829,
+       "new": 220536433195.93362,
+       "pct": -72.14,
+       "share_pct": 6.6
+      },
+      {
+       "period": "2026-07-01",
+       "series": "Unadjusted",
+       "old": 4664979355475.038,
+       "new": 4941682875571.5,
+       "pct": 5.93,
+       "share_pct": 5.3
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_volume_by_blockchain.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-09-01",
+     "compared": 80,
+     "material": true,
+     "material_periods": 67,
+     "material_cells": 79,
+     "first_material": "2021-02-01",
+     "last_material": "2026-08-01",
+     "minor_cells": 200,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [
+      "stellar"
+     ],
+     "largest": [
+      {
+       "period": "2026-02-01",
+       "series": "solana",
+       "old": 593582688798.4968,
+       "new": 39774669595.249664,
+       "pct": -93.3,
+       "share_pct": 69.97
+      },
+      {
+       "period": "2026-03-01",
+       "series": "solana",
+       "old": 279325536323.99835,
+       "new": 25706677526.647507,
+       "pct": -90.8,
+       "share_pct": 49.72
+      },
+      {
+       "period": "2025-10-01",
+       "series": "solana",
+       "old": 217137760585.21027,
+       "new": 24526241252.508038,
+       "pct": -88.7,
+       "share_pct": 41.44
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_volume_by_stablecoin.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-09-01",
+     "compared": 80,
+     "material": true,
+     "material_periods": 67,
+     "material_cells": 76,
+     "first_material": "2021-02-01",
+     "last_material": "2026-08-01",
+     "minor_cells": 204,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2026-02-01",
+       "series": "USDC",
+       "old": 611980248010.4608,
+       "new": 59495994131.910645,
+       "pct": -90.28,
+       "share_pct": 69.81
+      },
+      {
+       "period": "2026-03-01",
+       "series": "USDC",
+       "old": 298491988657.0901,
+       "new": 46278018349.276024,
+       "pct": -84.5,
+       "share_pct": 49.44
+      },
+      {
+       "period": "2025-10-01",
+       "series": "USDC",
+       "old": 242395170982.49783,
+       "new": 51262703539.02806,
+       "pct": -78.85,
+       "share_pct": 41.12
+      }
+     ]
+    },
+    "transactions__stablecoin_transaction_volume_retail_sized_vs_other_adjusted.csv": {
+     "kind": "monthly",
+     "cutoff": "2026-09-01",
+     "compared": 106,
+     "material": false,
+     "material_periods": 0,
+     "material_cells": 0,
+     "first_material": null,
+     "last_material": null,
+     "minor_cells": 186,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "2026-08-01",
+       "series": "Non Retail Sized",
+       "old": 1193444017902.6265,
+       "new": 1189759326006.5308,
+       "pct": -0.31,
+       "share_pct": 0.31
+      },
+      {
+       "period": "2022-05-01",
+       "series": "Non Retail Sized",
+       "old": 465884386735.50305,
+       "new": 466434456535.11554,
+       "pct": 0.12,
+       "share_pct": 0.12
+      },
+      {
+       "period": "2022-06-01",
+       "series": "Non Retail Sized",
+       "old": 375997892443.29126,
+       "new": 376411512378.7293,
+       "pct": 0.11,
+       "share_pct": 0.11
+      }
+     ]
+    },
+    "transactions__transaction_size_by_blockchain.csv": {
+     "kind": "categorical",
+     "cutoff": null,
+     "compared": 22,
+     "material": true,
+     "material_periods": 13,
+     "material_cells": 14,
+     "first_material": "base",
+     "last_material": "x_layer",
+     "minor_cells": 133,
+     "removed_periods": [],
+     "added_history": [],
+     "series_removed": [],
+     "series_added": [],
+     "largest": [
+      {
+       "period": "x_layer",
+       "series": "a. < $100",
+       "old": 59099874.0,
+       "new": 64279934.0,
+       "pct": 8.76,
+       "share_pct": 5.01
+      },
+      {
+       "period": "stable",
+       "series": "a. < $100",
+       "old": 7383019.0,
+       "new": 7698503.0,
+       "pct": 4.27,
+       "share_pct": 3.75
+      },
+      {
+       "period": "monad",
+       "series": "a. < $100",
+       "old": 42245924.0,
+       "new": 45749434.0,
+       "pct": 8.29,
+       "share_pct": 3.39
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

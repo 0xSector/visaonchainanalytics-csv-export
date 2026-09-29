@@ -8,15 +8,19 @@
 #
 # No SQL reconstruction, no toggle/filter resolution, no Allium auth — pure ground truth.
 # Deps: stdlib + duckdb (parquet read/pivot). Reproducible: re-run to refresh.
-import base64, csv, html as htmllib, json, os, re, urllib.request
+import base64, csv, datetime, html as htmllib, json, os, re, urllib.request
 import duckdb
 
-API = "https://app-server-dp-xjpv5b26pq-uw.a.run.app/api/v1/explorer/results/data"
+# Public read-only data endpoint the site itself calls (moved from a Cloud Run host to
+# app-server.allium.so by 2026-09-29; it 403s the default Python-urllib user agent).
+API = "https://app-server.allium.so/api/v1/explorer/results/data"
+UA = "Mozilla/5.0 (voa-csv-export; +https://github.com/0xSector/visaonchainanalytics-csv-export)"
 BASE = "https://visaonchainanalytics.com"
 PAGES = ["/", "/addresses", "/insights", "/lending", "/supply", "/transactions"]
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "artifacts")
 SEEDDIR = os.path.join(OUT, "_seeds")
+DONE = os.path.join(OUT, "pull_complete.json")  # written last; snapshot.py requires it
 con = duckdb.connect(); con.execute("SET TimeZone='UTC'")
 
 # ----- helpers to parse the RSC payload -----
@@ -97,7 +101,7 @@ def extract_seeds(page_html, tag):
 
 def server_query(sql):
     req = urllib.request.Request(API + "?format=json", data=json.dumps({"sql": sql}).encode(),
-                                 headers={"content-type": "application/json", "accept": "application/json"})
+                                 headers={"content-type": "application/json", "accept": "application/json", "user-agent": UA})
     return json.load(urllib.request.urlopen(req, timeout=180))
 
 def rebuild_tag_chart(chart, seed):
@@ -236,10 +240,12 @@ def write_chart_csv(chart, seed, page_name):
 
 def main():
     os.makedirs(OUT, exist_ok=True); os.makedirs(SEEDDIR, exist_ok=True)
+    if os.path.exists(DONE): os.remove(DONE)
+    started = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     catalog = []
     for route in PAGES:
         page_name = route.strip("/") or "home"
-        req = urllib.request.Request(BASE + route, headers={"user-agent": "Mozilla/5.0"})
+        req = urllib.request.Request(BASE + route, headers={"user-agent": UA})
         page_html = urllib.request.urlopen(req, timeout=90).read().decode("utf-8", "replace")
         rsc = decode_rsc(page_html)
         charts = parse_charts(rsc)
@@ -284,6 +290,9 @@ def main():
         print(f"{route:14s} charts={len(charts)} seeds={len(seeds)} matched={sum(used)}")
     json.dump(catalog, open(os.path.join(OUT, "charts_manifest.json"), "w"), indent=2)
     write_index(catalog)
+    json.dump({"started_at": started,
+               "finished_at": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+               "charts": len(catalog)}, open(DONE, "w"), indent=2)
     matched = sum(1 for c in catalog if c.get("file"))
     print(f"\nTOTAL charts={len(catalog)} csv_written={matched}")
     miss = [c for c in catalog if not c.get("file")]

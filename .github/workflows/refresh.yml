@@ -1,0 +1,67 @@
+# @purpose: Refresh the VOA CSV export. Pulls every chart (extract_all.py), gates and archives
+# the pull as a dated snapshot with restatement flags (snapshot.py), rebuilds the Pages viewer
+# (build_site.py) and commits. Nothing is committed when the pull fails a check or matches the
+# latest snapshot. Started weekly, by the site's Refresh button (refresh-api/ Vercel function),
+# or by "Run workflow" in the Actions tab.
+name: refresh
+run-name: refresh (${{ github.event_name == 'schedule' && 'scheduled' || inputs.trigger }})
+
+on:
+  schedule:
+    - cron: "0 14 * * 1"   # Mondays 14:00 UTC = 09:00 CDT / 08:00 CST
+  workflow_dispatch:
+    inputs:
+      trigger:
+        description: What started this run
+        type: choice
+        options: [manual, button]
+        default: manual
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Pull every chart from visaonchainanalytics.com
+        run: python3 extract_all.py
+
+      - name: Gate and archive the pull
+        id: snap
+        env:
+          TRIGGER: ${{ github.event_name == 'schedule' && 'scheduled' || inputs.trigger }}
+        run: python3 snapshot.py --trigger "$TRIGGER"
+
+      - name: Rebuild the site
+        if: steps.snap.outputs.changed == 'true'
+        run: python3 build_site.py
+
+      - name: Commit and publish
+        if: steps.snap.outputs.changed == 'true'
+        env:
+          SNAPSHOT: ${{ steps.snap.outputs.snapshot }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add artifacts snapshots index.html voa-charts-bundle.zip
+          git commit -m "data: snapshot $SNAPSHOT"
+          git push
+          gh api -X POST "repos/$GITHUB_REPOSITORY/pages/builds" --silent \
+            || echo "::warning::Pages build request failed; the push normally triggers one anyway"

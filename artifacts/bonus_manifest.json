@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Stablecoin Payments by Payment Lane (B2B / B2C / C2B / C2C)",
+    "description": "BONUS - not a visaonchainanalytics.com chart. The VOA 'payments' series (Adjusted) decomposed into payment lanes by joining Allium's enriched_transfers (classification='payments', is_adjusted_volume) to payment_categorization.core_payment_category at transfer grain. All-chain, monthly 2020-01..2026-08; ~99% of VOA payments is lane-attributed. Derived analysis, not a VOA site export.",
+    "metric": "usd_amount",
+    "groupBy": "core_payment_category",
+    "aggregate": "sum",
+    "x_field": "month",
+    "page": "bonus",
+    "file": "bonus__stablecoin_payments_by_lane_2020-2026.csv",
+    "shareId": "stablecoins.intelligence",
+    "queryId": "enriched_transfers \u22c8 payment_categorization",
+    "rows": 80,
+    "series": [
+      "C2C (P2P)",
+      "Deposit to Institutional",
+      "B2C",
+      "B2B",
+      "C2B",
+      "I2C",
+      "I2B",
+      "Institutional",
+      "Unattributed"
+    ],
+    "note": "Visa-derived decomposition; all-chain total ~1-2% above the VOA site (curated allowlist)."
+  }
+]
